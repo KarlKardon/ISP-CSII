@@ -1,0 +1,3 @@
+[submodule "Soccer"]
+	path = Soccer
+	url = https://github.com/TheCoderMerlin/ScenesShellBasic
