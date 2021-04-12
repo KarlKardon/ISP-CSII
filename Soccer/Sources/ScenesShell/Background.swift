@@ -7,7 +7,7 @@ import Igis
 
 
 class Background : RenderableEntity {
-
+// hi
       init() {
           // Using a meaningful name can be helpful for debugging
           super.init(name:"Background")
