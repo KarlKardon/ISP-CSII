@@ -11,9 +11,9 @@ depends-top-level:
 - "InteractionLayer"
 - "Layer"
 - "Player"
+- !private "Self"
 - !private "StringLiteralType"
 - !private "insert"
-- !private "player1"
 depends-member:
 - ["4Igis12CanvasObjectC", ""]
 - ["s12CaseIterableP", "blue"]
@@ -21,11 +21,13 @@ depends-member:
 - ["SQ", "Color"]
 - ["SQ", "FillStyle"]
 - ["SQ", "Player"]
+- !private ["SQ", "Self"]
 - ["SQ", ""]
 - ["SQ", "blue"]
 - ["SQ", "init"]
 - !private ["SQ", "insert"]
 - !private ["SQ", "player1"]
+- !private ["SQ", "player2"]
 - ["6Scenes12EventHandlerP", ""]
 - ["6Scenes12EventHandlerP", "init"]
 - ["4Igis9FillStyleC", "init"]
@@ -33,24 +35,30 @@ depends-member:
 - ["6Scenes18IdentifiableObjectC", "Color"]
 - ["6Scenes18IdentifiableObjectC", "FillStyle"]
 - ["6Scenes18IdentifiableObjectC", "Player"]
+- !private ["6Scenes18IdentifiableObjectC", "Self"]
 - ["6Scenes18IdentifiableObjectC", ""]
 - ["6Scenes18IdentifiableObjectC", "init"]
 - !private ["6Scenes18IdentifiableObjectC", "insert"]
 - ["6Scenes18IdentifiableObjectC", "player1"]
+- ["6Scenes18IdentifiableObjectC", "player2"]
 - ["11ScenesShell16InteractionLayerC", "Color"]
 - ["11ScenesShell16InteractionLayerC", "FillStyle"]
 - ["11ScenesShell16InteractionLayerC", "Player"]
+- !private ["11ScenesShell16InteractionLayerC", "Self"]
 - ["11ScenesShell16InteractionLayerC", "deinit"]
 - ["11ScenesShell16InteractionLayerC", "init"]
 - !private ["11ScenesShell16InteractionLayerC", "insert"]
 - ["11ScenesShell16InteractionLayerC", "player1"]
+- ["11ScenesShell16InteractionLayerC", "player2"]
 - ["6Scenes5LayerC", "Color"]
 - ["6Scenes5LayerC", "FillStyle"]
 - ["6Scenes5LayerC", "Player"]
+- !private ["6Scenes5LayerC", "Self"]
 - ["6Scenes5LayerC", ""]
 - ["6Scenes5LayerC", "init"]
 - !private ["6Scenes5LayerC", "insert"]
 - ["6Scenes5LayerC", "player1"]
+- ["6Scenes5LayerC", "player2"]
 - ["6Scenes16MouseMoveHandlerP", "init"]
 - ["4Igis5ColorC4NameO", "blue"]
 - ["11ScenesShell6PlayerC", "init"]
@@ -102,4 +110,4 @@ depends-external:
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOHTTPParser.build/module.modulemap"
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOAtomics.build/module.modulemap"
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOLinux.build/module.modulemap"
-interface-hash: "846bf310eaf55c2c950cf42eef5130a0"
+interface-hash: "f293ea68b5dc18590990a043a9ffcddd"

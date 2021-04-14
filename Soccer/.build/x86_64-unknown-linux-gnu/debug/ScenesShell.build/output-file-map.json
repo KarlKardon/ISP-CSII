@@ -14,6 +14,12 @@
     "swiftmodule": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/BackgroundLayer~partial.swiftmodule",
     "swift-dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/BackgroundLayer.swiftdeps"
   },
+  "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/Cache.swift": {
+    "dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/Cache.d",
+    "object": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/Cache.swift.o",
+    "swiftmodule": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/Cache~partial.swiftmodule",
+    "swift-dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/Cache.swiftdeps"
+  },
   "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/Cookies.swift": {
     "dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/Cookies.d",
     "object": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/Cookies.swift.o",
