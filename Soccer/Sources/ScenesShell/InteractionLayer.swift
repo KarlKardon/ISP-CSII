@@ -1,4 +1,5 @@
 import Scenes
+import Igis
 
   /*
      This class is responsible for the interaction Layer.
@@ -8,11 +9,17 @@ import Scenes
 
 class InteractionLayer : Layer {
 
-      init() {
+    static let player1 = Player(teamJerseyColor : FillStyle(color:Color(.blue)))
+    static let player2 = Player(teamJerseyColor : FillStyle(color:Color(.blue)))
+    
+    init() {
+
           // Using a meaningful name can be helpful for debugging
           super.init(name:"Interaction")
 
           // We insert our RenderableEntities in the constructor
 
+          insert(entity:Self.player1, at:.front)
+          insert(entity:Self.player2, at:.front)
       }
   }

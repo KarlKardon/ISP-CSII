@@ -1,0 +1,14 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "swiftTargetMap" : {
+    "C.ScenesShell-debug.module" : "ScenesShell"
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}

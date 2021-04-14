@@ -1,0 +1,59 @@
+{
+  "": {
+    "swift-dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/master.swiftdeps"
+  },
+  "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/Background.swift": {
+    "dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/Background.d",
+    "object": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/Background.swift.o",
+    "swiftmodule": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/Background~partial.swiftmodule",
+    "swift-dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/Background.swiftdeps"
+  },
+  "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/BackgroundLayer.swift": {
+    "dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/BackgroundLayer.d",
+    "object": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/BackgroundLayer.swift.o",
+    "swiftmodule": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/BackgroundLayer~partial.swiftmodule",
+    "swift-dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/BackgroundLayer.swiftdeps"
+  },
+  "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/Cookies.swift": {
+    "dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/Cookies.d",
+    "object": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/Cookies.swift.o",
+    "swiftmodule": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/Cookies~partial.swiftmodule",
+    "swift-dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/Cookies.swiftdeps"
+  },
+  "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/ForegroundLayer.swift": {
+    "dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/ForegroundLayer.d",
+    "object": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/ForegroundLayer.swift.o",
+    "swiftmodule": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/ForegroundLayer~partial.swiftmodule",
+    "swift-dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/ForegroundLayer.swiftdeps"
+  },
+  "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/InteractionLayer.swift": {
+    "dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/InteractionLayer.d",
+    "object": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/InteractionLayer.swift.o",
+    "swiftmodule": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/InteractionLayer~partial.swiftmodule",
+    "swift-dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/InteractionLayer.swiftdeps"
+  },
+  "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/MainScene.swift": {
+    "dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/MainScene.d",
+    "object": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/MainScene.swift.o",
+    "swiftmodule": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/MainScene~partial.swiftmodule",
+    "swift-dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/MainScene.swiftdeps"
+  },
+  "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/Player.swift": {
+    "dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/Player.d",
+    "object": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/Player.swift.o",
+    "swiftmodule": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/Player~partial.swiftmodule",
+    "swift-dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/Player.swiftdeps"
+  },
+  "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/ShellDirector.swift": {
+    "dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/ShellDirector.d",
+    "object": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/ShellDirector.swift.o",
+    "swiftmodule": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/ShellDirector~partial.swiftmodule",
+    "swift-dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/ShellDirector.swiftdeps"
+  },
+  "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/main.swift": {
+    "dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/main.d",
+    "object": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/main.swift.o",
+    "swiftmodule": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/main~partial.swiftmodule",
+    "swift-dependencies": "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/.build/x86_64-unknown-linux-gnu/debug/ScenesShell.build/main.swiftdeps"
+  }
+}

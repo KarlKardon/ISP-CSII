@@ -1,0 +1,54 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "HTTPCookie"
+provides-nominal:
+- "11ScenesShell10HTTPCookieC"
+provides-member:
+- ["11ScenesShell10HTTPCookieC", ""]
+depends-top-level:
+- "HTTPCookie"
+- "NSObject"
+depends-member:
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", ""]
+- ["SQ", ""]
+- ["11ScenesShell10HTTPCookieC", ""]
+- ["11ScenesShell10HTTPCookieC", "deinit"]
+- ["11ScenesShell10HTTPCookieC", "init"]
+- ["SH", ""]
+- ["10Foundation8NSObjectC", ""]
+- ["10Foundation8NSObjectC", "init"]
+- ["10Foundation16NSObjectProtocolP", ""]
+depends-nominal:
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "SQ"
+- "11ScenesShell10HTTPCookieC"
+- "SH"
+- "10Foundation8NSObjectC"
+- "10Foundation16NSObjectProtocolP"
+depends-dynamic-lookup:
+depends-external:
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOHTTP1.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIO.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/local/lib/merlin/Scenes-1.1.5/Scenes/.build/debug/Scenes.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/Igis.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOConcurrencyHelpers.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOWebSocket.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOSHA1/include/CNIOSHA1.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOHTTPParser/include/CNIOHTTPParser.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOHTTPParser/include/c_nio_http_parser.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOAtomics/include/CNIOAtomics.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOLinux/include/CNIOLinux.h"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOSHA1.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIODarwin.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOHTTPParser.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOAtomics.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOLinux.build/module.modulemap"
+interface-hash: "d30774c041a32308d82f7d5f7eb012fd"

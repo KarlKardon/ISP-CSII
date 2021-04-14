@@ -1,0 +1,105 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "InteractionLayer"
+provides-nominal:
+- "11ScenesShell16InteractionLayerC"
+provides-member:
+- ["11ScenesShell16InteractionLayerC", ""]
+depends-top-level:
+- "Color"
+- "FillStyle"
+- "InteractionLayer"
+- "Layer"
+- "Player"
+- !private "StringLiteralType"
+- !private "insert"
+- !private "player1"
+depends-member:
+- ["4Igis12CanvasObjectC", ""]
+- ["s12CaseIterableP", "blue"]
+- ["4Igis5ColorC", "init"]
+- ["SQ", "Color"]
+- ["SQ", "FillStyle"]
+- ["SQ", "Player"]
+- ["SQ", ""]
+- ["SQ", "blue"]
+- ["SQ", "init"]
+- !private ["SQ", "insert"]
+- !private ["SQ", "player1"]
+- ["6Scenes12EventHandlerP", ""]
+- ["6Scenes12EventHandlerP", "init"]
+- ["4Igis9FillStyleC", "init"]
+- ["SH", "blue"]
+- ["6Scenes18IdentifiableObjectC", "Color"]
+- ["6Scenes18IdentifiableObjectC", "FillStyle"]
+- ["6Scenes18IdentifiableObjectC", "Player"]
+- ["6Scenes18IdentifiableObjectC", ""]
+- ["6Scenes18IdentifiableObjectC", "init"]
+- !private ["6Scenes18IdentifiableObjectC", "insert"]
+- ["6Scenes18IdentifiableObjectC", "player1"]
+- ["11ScenesShell16InteractionLayerC", "Color"]
+- ["11ScenesShell16InteractionLayerC", "FillStyle"]
+- ["11ScenesShell16InteractionLayerC", "Player"]
+- ["11ScenesShell16InteractionLayerC", "deinit"]
+- ["11ScenesShell16InteractionLayerC", "init"]
+- !private ["11ScenesShell16InteractionLayerC", "insert"]
+- ["11ScenesShell16InteractionLayerC", "player1"]
+- ["6Scenes5LayerC", "Color"]
+- ["6Scenes5LayerC", "FillStyle"]
+- ["6Scenes5LayerC", "Player"]
+- ["6Scenes5LayerC", ""]
+- ["6Scenes5LayerC", "init"]
+- !private ["6Scenes5LayerC", "insert"]
+- ["6Scenes5LayerC", "player1"]
+- ["6Scenes16MouseMoveHandlerP", "init"]
+- ["4Igis5ColorC4NameO", "blue"]
+- ["11ScenesShell6PlayerC", "init"]
+- ["SY", "blue"]
+- ["6Scenes16RenderableEntityC", ""]
+- !private ["6Scenes6ZOrderO", "front"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+depends-nominal:
+- "4Igis12CanvasObjectC"
+- "s12CaseIterableP"
+- "4Igis5ColorC"
+- "SQ"
+- "6Scenes12EventHandlerP"
+- "4Igis9FillStyleC"
+- "SH"
+- "6Scenes18IdentifiableObjectC"
+- "11ScenesShell16InteractionLayerC"
+- "6Scenes5LayerC"
+- "6Scenes16MouseMoveHandlerP"
+- "4Igis5ColorC4NameO"
+- "11ScenesShell6PlayerC"
+- "SY"
+- "6Scenes16RenderableEntityC"
+- !private "6Scenes6ZOrderO"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+depends-dynamic-lookup:
+depends-external:
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOHTTP1.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIO.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/local/lib/merlin/Scenes-1.1.5/Scenes/.build/debug/Scenes.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/Igis.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOConcurrencyHelpers.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOWebSocket.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOSHA1/include/CNIOSHA1.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOHTTPParser/include/CNIOHTTPParser.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOHTTPParser/include/c_nio_http_parser.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOAtomics/include/CNIOAtomics.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOLinux/include/CNIOLinux.h"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOSHA1.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIODarwin.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOHTTPParser.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOAtomics.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOLinux.build/module.modulemap"
+interface-hash: "846bf310eaf55c2c950cf42eef5130a0"
