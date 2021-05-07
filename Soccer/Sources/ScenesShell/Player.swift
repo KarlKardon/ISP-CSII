@@ -14,10 +14,10 @@ class Player : RenderableEntity, MouseMoveHandler {
     var headRect : Rect
   
     init(teamJerseyColor: FillStyle) {
-        jerseyRect = Rect(topLeft:Point(x:0, y:0), size:Size(width:100, height: 250))
+        jerseyRect = Rect(topLeft:Point(x:0, y:0), size:Size(width:50, height: 100))
         jersey = Rectangle(rect:jerseyRect, fillMode:.fill)
         jerseyColor = teamJerseyColor
-        headRect = Rect(topLeft:Point(x:0, y:0), size:Size(width:100, height:50))
+        headRect = Rect(topLeft:Point(x:0, y:0), size:Size(width:50, height:25))
         head = Rectangle(rect:headRect, fillMode:.fill)
         headColor = FillStyle(color:Color(.brown))
         
@@ -37,6 +37,12 @@ class Player : RenderableEntity, MouseMoveHandler {
         dispatcher.unregisterMouseMoveHandler(handler:self)
     }
 
+    func move(to point:Point) {
+        jersey.rect.topLeft = Point(x:point.x, y: point.y + 50)
+        head.rect.topLeft = point
+        
+    }
+    
     func onMouseMove(globalLocation:Point, movement:Point) {
         jersey.rect.topLeft = Point(x:globalLocation.x, y: globalLocation.y + 50)
         head.rect.topLeft = globalLocation        

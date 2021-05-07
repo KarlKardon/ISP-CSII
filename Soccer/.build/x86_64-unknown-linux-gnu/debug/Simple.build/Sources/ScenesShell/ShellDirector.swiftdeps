@@ -1,0 +1,96 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ShellDirector"
+provides-nominal:
+- "6Simple13ShellDirectorC"
+provides-member:
+- ["6Simple13ShellDirectorC", ""]
+depends-top-level:
+- "Director"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- !private "MainScene"
+- "ShellDirector"
+- !private "enqueueScene"
+depends-member:
+- !private ["s23CustomStringConvertibleP", "MainScene"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "enqueueScene"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["6Scenes8DirectorC", "Int"]
+- !private ["6Scenes8DirectorC", "MainScene"]
+- ["6Scenes8DirectorC", ""]
+- !private ["6Scenes8DirectorC", "enqueueScene"]
+- ["6Scenes8DirectorC", "framesPerSecond"]
+- ["6Scenes8DirectorC", "init"]
+- !private ["SQ", "MainScene"]
+- ["SQ", ""]
+- !private ["SQ", "enqueueScene"]
+- !private ["SQ", "init"]
+- ["6Scenes18IdentifiableObjectC", "Int"]
+- !private ["6Scenes18IdentifiableObjectC", "MainScene"]
+- ["6Scenes18IdentifiableObjectC", ""]
+- !private ["6Scenes18IdentifiableObjectC", "enqueueScene"]
+- ["6Scenes18IdentifiableObjectC", "framesPerSecond"]
+- !private ["6Simple9MainSceneC", "init"]
+- !private ["4Igis15PainterProtocolP", "MainScene"]
+- ["4Igis15PainterProtocolP", ""]
+- !private ["4Igis15PainterProtocolP", "calculate"]
+- !private ["4Igis15PainterProtocolP", "enqueueScene"]
+- !private ["4Igis15PainterProtocolP", "framesPerSecond"]
+- !private ["4Igis15PainterProtocolP", "init"]
+- !private ["4Igis15PainterProtocolP", "onCanvasResize"]
+- !private ["4Igis15PainterProtocolP", "onClick"]
+- !private ["4Igis15PainterProtocolP", "onKeyDown"]
+- !private ["4Igis15PainterProtocolP", "onKeyUp"]
+- !private ["4Igis15PainterProtocolP", "onMouseDown"]
+- !private ["4Igis15PainterProtocolP", "onMouseMove"]
+- !private ["4Igis15PainterProtocolP", "onMouseUp"]
+- !private ["4Igis15PainterProtocolP", "onWindowMouseUp"]
+- !private ["4Igis15PainterProtocolP", "onWindowResize"]
+- !private ["4Igis15PainterProtocolP", "render"]
+- !private ["4Igis15PainterProtocolP", "setup"]
+- ["6Scenes5SceneC", ""]
+- ["6Simple13ShellDirectorC", "Int"]
+- !private ["6Simple13ShellDirectorC", "MainScene"]
+- ["6Simple13ShellDirectorC", "deinit"]
+- !private ["6Simple13ShellDirectorC", "enqueueScene"]
+- ["6Simple13ShellDirectorC", "framesPerSecond"]
+- ["6Simple13ShellDirectorC", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+depends-nominal:
+- "s23CustomStringConvertibleP"
+- "6Scenes8DirectorC"
+- "SQ"
+- "6Scenes18IdentifiableObjectC"
+- !private "6Simple9MainSceneC"
+- "4Igis15PainterProtocolP"
+- "6Scenes5SceneC"
+- "6Simple13ShellDirectorC"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+depends-dynamic-lookup:
+depends-external:
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOHTTP1.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIO.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/local/lib/merlin/Scenes-1.1.5/Scenes/.build/debug/Scenes.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/Igis.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOConcurrencyHelpers.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOWebSocket.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOSHA1/include/CNIOSHA1.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOHTTPParser/include/CNIOHTTPParser.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOHTTPParser/include/c_nio_http_parser.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOAtomics/include/CNIOAtomics.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOLinux/include/CNIOLinux.h"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOSHA1.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIODarwin.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOHTTPParser.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOAtomics.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOLinux.build/module.modulemap"
+interface-hash: "f7718beea01e7e8e394b60dc635b7b2d"

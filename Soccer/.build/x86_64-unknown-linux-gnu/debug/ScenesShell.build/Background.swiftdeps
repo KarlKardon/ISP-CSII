@@ -11,7 +11,6 @@ depends-top-level:
 - "Canvas"
 - !private "Color"
 - "FillStyle"
-- !private "FloatLiteralType"
 - !private "IntegerLiteralType"
 - !private "Point"
 - "Rect"
@@ -22,6 +21,7 @@ depends-top-level:
 - !private "background"
 - !private "backgroundColor"
 - !private "backgroundRect"
+- !private "canvasSize"
 depends-member:
 - ["11ScenesShell10BackgroundC", "Canvas"]
 - !private ["11ScenesShell10BackgroundC", "Color"]
@@ -33,6 +33,7 @@ depends-member:
 - ["11ScenesShell10BackgroundC", "background"]
 - ["11ScenesShell10BackgroundC", "backgroundColor"]
 - ["11ScenesShell10BackgroundC", "backgroundRect"]
+- !private ["11ScenesShell10BackgroundC", "canvasSize"]
 - ["11ScenesShell10BackgroundC", "deinit"]
 - ["11ScenesShell10BackgroundC", "init"]
 - ["11ScenesShell10BackgroundC", "render"]
@@ -50,6 +51,7 @@ depends-member:
 - !private ["SQ", "background"]
 - !private ["SQ", "backgroundColor"]
 - !private ["SQ", "backgroundRect"]
+- !private ["SQ", "canvasSize"]
 - !private ["SQ", "fill"]
 - !private ["SQ", "init"]
 - !private ["SQ", "olive"]
@@ -69,12 +71,12 @@ depends-member:
 - ["6Scenes18IdentifiableObjectC", "background"]
 - ["6Scenes18IdentifiableObjectC", "backgroundColor"]
 - ["6Scenes18IdentifiableObjectC", "backgroundRect"]
+- !private ["6Scenes18IdentifiableObjectC", "canvasSize"]
 - ["6Scenes18IdentifiableObjectC", "init"]
 - ["6Scenes18IdentifiableObjectC", "render"]
 - !private ["4Igis5ColorC4NameO", "olive"]
 - !private ["4Igis5PointV", "init"]
 - !private ["SY", "olive"]
-- !private ["4Igis4RectV", "init"]
 - !private ["4Igis9RectangleC", "init"]
 - ["6Scenes16RenderableEntityC", "Canvas"]
 - !private ["6Scenes16RenderableEntityC", "Color"]
@@ -87,9 +89,9 @@ depends-member:
 - ["6Scenes16RenderableEntityC", "background"]
 - ["6Scenes16RenderableEntityC", "backgroundColor"]
 - ["6Scenes16RenderableEntityC", "backgroundRect"]
+- !private ["6Scenes16RenderableEntityC", "canvasSize"]
 - ["6Scenes16RenderableEntityC", "init"]
 - ["6Scenes16RenderableEntityC", "render"]
-- !private ["4Igis4SizeV", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 depends-nominal:
@@ -106,10 +108,8 @@ depends-nominal:
 - !private "4Igis5ColorC4NameO"
 - !private "4Igis5PointV"
 - !private "SY"
-- !private "4Igis4RectV"
 - !private "4Igis9RectangleC"
 - "6Scenes16RenderableEntityC"
-- !private "4Igis4SizeV"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 depends-dynamic-lookup:

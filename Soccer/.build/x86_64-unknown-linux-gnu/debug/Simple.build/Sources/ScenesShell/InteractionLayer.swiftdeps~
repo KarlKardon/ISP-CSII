@@ -1,0 +1,148 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "InteractionLayer"
+provides-nominal:
+- "6Simple16InteractionLayerC"
+provides-member:
+- ["6Simple16InteractionLayerC", ""]
+depends-top-level:
+- !private "!="
+- "Color"
+- "FillStyle"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "InteractionLayer"
+- "Layer"
+- "Player"
+- !private "Self"
+- !private "StringLiteralType"
+- !private "insert"
+- !private "||"
+depends-member:
+- ["4Igis12CanvasObjectC", ""]
+- !private ["4Igis12CanvasObjectC", "rect"]
+- ["s12CaseIterableP", "blue"]
+- ["s12CaseIterableP", "red"]
+- ["4Igis5ColorC", "init"]
+- !private ["SL", ""]
+- !private ["s23CustomStringConvertibleP", ""]
+- ["SQ", "Color"]
+- ["SQ", "FillStyle"]
+- ["SQ", "Player"]
+- !private ["SQ", "Self"]
+- ["SQ", ""]
+- ["SQ", "blue"]
+- ["SQ", "init"]
+- !private ["SQ", "insert"]
+- !private ["SQ", "jersey"]
+- !private ["SQ", "player1"]
+- !private ["SQ", "player2"]
+- ["SQ", "red"]
+- !private ["SQ", "topLeft"]
+- !private ["SQ", "x"]
+- !private ["SQ", "y"]
+- ["6Scenes12EventHandlerP", ""]
+- ["6Scenes12EventHandlerP", "init"]
+- !private ["6Scenes12EventHandlerP", "jersey"]
+- ["4Igis9FillStyleC", "init"]
+- !private ["SH", ""]
+- ["SH", "blue"]
+- ["SH", "red"]
+- ["6Scenes18IdentifiableObjectC", "Color"]
+- ["6Scenes18IdentifiableObjectC", "FillStyle"]
+- ["6Scenes18IdentifiableObjectC", "Player"]
+- !private ["6Scenes18IdentifiableObjectC", "Self"]
+- ["6Scenes18IdentifiableObjectC", ""]
+- ["6Scenes18IdentifiableObjectC", "init"]
+- !private ["6Scenes18IdentifiableObjectC", "insert"]
+- !private ["6Scenes18IdentifiableObjectC", "jersey"]
+- ["6Scenes18IdentifiableObjectC", "player1"]
+- ["6Scenes18IdentifiableObjectC", "player2"]
+- ["6Simple16InteractionLayerC", "Color"]
+- ["6Simple16InteractionLayerC", "FillStyle"]
+- ["6Simple16InteractionLayerC", "Player"]
+- !private ["6Simple16InteractionLayerC", "Self"]
+- ["6Simple16InteractionLayerC", "deinit"]
+- ["6Simple16InteractionLayerC", "init"]
+- !private ["6Simple16InteractionLayerC", "insert"]
+- ["6Simple16InteractionLayerC", "player1"]
+- ["6Simple16InteractionLayerC", "player2"]
+- ["6Scenes5LayerC", "Color"]
+- ["6Scenes5LayerC", "FillStyle"]
+- ["6Scenes5LayerC", "Player"]
+- !private ["6Scenes5LayerC", "Self"]
+- ["6Scenes5LayerC", ""]
+- ["6Scenes5LayerC", "init"]
+- !private ["6Scenes5LayerC", "insert"]
+- ["6Scenes5LayerC", "player1"]
+- ["6Scenes5LayerC", "player2"]
+- ["6Scenes16MouseMoveHandlerP", "init"]
+- !private ["6Scenes16MouseMoveHandlerP", "jersey"]
+- ["4Igis5ColorC4NameO", "blue"]
+- ["4Igis5ColorC4NameO", "red"]
+- !private ["Sj", ""]
+- ["6Simple6PlayerC", "init"]
+- !private ["6Simple6PlayerC", "jersey"]
+- !private ["4Igis5PointV", "x"]
+- !private ["4Igis5PointV", "y"]
+- ["SY", "blue"]
+- ["SY", "red"]
+- !private ["4Igis4RectV", "topLeft"]
+- !private ["4Igis9RectangleC", "rect"]
+- ["6Scenes16RenderableEntityC", ""]
+- !private ["6Scenes16RenderableEntityC", "jersey"]
+- !private ["Sx", ""]
+- !private ["6Scenes6ZOrderO", "front"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+depends-nominal:
+- "4Igis12CanvasObjectC"
+- "s12CaseIterableP"
+- "4Igis5ColorC"
+- !private "SL"
+- !private "s23CustomStringConvertibleP"
+- "SQ"
+- "6Scenes12EventHandlerP"
+- "4Igis9FillStyleC"
+- "SH"
+- "6Scenes18IdentifiableObjectC"
+- "6Simple16InteractionLayerC"
+- "6Scenes5LayerC"
+- "6Scenes16MouseMoveHandlerP"
+- "4Igis5ColorC4NameO"
+- !private "Sj"
+- "6Simple6PlayerC"
+- !private "4Igis5PointV"
+- "SY"
+- !private "4Igis4RectV"
+- !private "4Igis9RectangleC"
+- "6Scenes16RenderableEntityC"
+- !private "Sx"
+- !private "6Scenes6ZOrderO"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+depends-dynamic-lookup:
+depends-external:
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOHTTP1.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIO.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/local/lib/merlin/Scenes-1.1.5/Scenes/.build/debug/Scenes.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/Igis.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOConcurrencyHelpers.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOWebSocket.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOSHA1/include/CNIOSHA1.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOHTTPParser/include/CNIOHTTPParser.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOHTTPParser/include/c_nio_http_parser.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOAtomics/include/CNIOAtomics.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOLinux/include/CNIOLinux.h"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOSHA1.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIODarwin.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOHTTPParser.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOAtomics.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOLinux.build/module.modulemap"
+interface-hash: "2635118c6d1681f675504ff3c8261af9"

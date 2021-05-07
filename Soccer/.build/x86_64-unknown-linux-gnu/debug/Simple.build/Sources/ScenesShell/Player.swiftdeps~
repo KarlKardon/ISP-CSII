@@ -1,0 +1,229 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Player"
+provides-nominal:
+- "6Simple6PlayerC"
+provides-member:
+- ["6Simple6PlayerC", ""]
+depends-top-level:
+- !private "+"
+- "AssignmentPrecedence"
+- "Canvas"
+- !private "Color"
+- "FillStyle"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "MouseMoveHandler"
+- "Player"
+- "Point"
+- "Rect"
+- "Rectangle"
+- "RenderableEntity"
+- "Size"
+- !private "StringLiteralType"
+- !private "dispatcher"
+- !private "head"
+- !private "headColor"
+- !private "headRect"
+- !private "jersey"
+- !private "jerseyColor"
+- !private "jerseyRect"
+depends-member:
+- !private ["4Igis6CanvasC", "render"]
+- ["4Igis12CanvasObjectC", ""]
+- !private ["4Igis12CanvasObjectC", "rect"]
+- !private ["s12CaseIterableP", "brown"]
+- !private ["4Igis5ColorC", "init"]
+- !private ["6Scenes10DispatcherC", "registerMouseMoveHandler"]
+- !private ["6Scenes10DispatcherC", "unregisterMouseMoveHandler"]
+- !private ["SQ", "Color"]
+- !private ["SQ", "FillStyle"]
+- !private ["SQ", "Point"]
+- !private ["SQ", "Rect"]
+- !private ["SQ", "Rectangle"]
+- !private ["SQ", "Size"]
+- ["SQ", ""]
+- !private ["SQ", "brown"]
+- !private ["SQ", "dispatcher"]
+- !private ["SQ", "fill"]
+- !private ["SQ", "head"]
+- !private ["SQ", "headColor"]
+- !private ["SQ", "headRect"]
+- !private ["SQ", "init"]
+- !private ["SQ", "jersey"]
+- !private ["SQ", "jerseyColor"]
+- !private ["SQ", "jerseyRect"]
+- ["SQ", "name"]
+- ["SQ", "onMouseMove"]
+- !private ["SQ", "render"]
+- !private ["SQ", "setup"]
+- !private ["SQ", "teardown"]
+- !private ["SQ", "topLeft"]
+- !private ["SQ", "x"]
+- !private ["SQ", "y"]
+- !private ["6Scenes12EventHandlerP", "Color"]
+- !private ["6Scenes12EventHandlerP", "FillStyle"]
+- !private ["6Scenes12EventHandlerP", "Point"]
+- !private ["6Scenes12EventHandlerP", "Rect"]
+- !private ["6Scenes12EventHandlerP", "Rectangle"]
+- !private ["6Scenes12EventHandlerP", "Size"]
+- ["6Scenes12EventHandlerP", ""]
+- !private ["6Scenes12EventHandlerP", "dispatcher"]
+- !private ["6Scenes12EventHandlerP", "head"]
+- !private ["6Scenes12EventHandlerP", "headColor"]
+- !private ["6Scenes12EventHandlerP", "headRect"]
+- !private ["6Scenes12EventHandlerP", "jersey"]
+- !private ["6Scenes12EventHandlerP", "jerseyColor"]
+- !private ["6Scenes12EventHandlerP", "jerseyRect"]
+- ["6Scenes12EventHandlerP", "name"]
+- ["6Scenes12EventHandlerP", "onMouseMove"]
+- !private ["6Scenes12EventHandlerP", "render"]
+- !private ["6Scenes12EventHandlerP", "setup"]
+- !private ["6Scenes12EventHandlerP", "teardown"]
+- !private ["4Igis8FillModeO", "fill"]
+- !private ["4Igis9FillStyleC", "init"]
+- !private ["SH", "brown"]
+- !private ["SH", "fill"]
+- ["6Scenes18IdentifiableObjectC", "Canvas"]
+- !private ["6Scenes18IdentifiableObjectC", "Color"]
+- ["6Scenes18IdentifiableObjectC", "FillStyle"]
+- ["6Scenes18IdentifiableObjectC", "Point"]
+- ["6Scenes18IdentifiableObjectC", "Rect"]
+- ["6Scenes18IdentifiableObjectC", "Rectangle"]
+- ["6Scenes18IdentifiableObjectC", "Size"]
+- ["6Scenes18IdentifiableObjectC", ""]
+- !private ["6Scenes18IdentifiableObjectC", "dispatcher"]
+- ["6Scenes18IdentifiableObjectC", "head"]
+- ["6Scenes18IdentifiableObjectC", "headColor"]
+- ["6Scenes18IdentifiableObjectC", "headRect"]
+- ["6Scenes18IdentifiableObjectC", "init"]
+- ["6Scenes18IdentifiableObjectC", "jersey"]
+- ["6Scenes18IdentifiableObjectC", "jerseyColor"]
+- ["6Scenes18IdentifiableObjectC", "jerseyRect"]
+- ["6Scenes18IdentifiableObjectC", "name"]
+- ["6Scenes18IdentifiableObjectC", "onMouseMove"]
+- ["6Scenes18IdentifiableObjectC", "render"]
+- ["6Scenes18IdentifiableObjectC", "setup"]
+- ["6Scenes18IdentifiableObjectC", "teardown"]
+- !private ["6Scenes16MouseMoveHandlerP", "Color"]
+- !private ["6Scenes16MouseMoveHandlerP", "FillStyle"]
+- !private ["6Scenes16MouseMoveHandlerP", "Point"]
+- !private ["6Scenes16MouseMoveHandlerP", "Rect"]
+- !private ["6Scenes16MouseMoveHandlerP", "Rectangle"]
+- !private ["6Scenes16MouseMoveHandlerP", "Size"]
+- ["6Scenes16MouseMoveHandlerP", ""]
+- !private ["6Scenes16MouseMoveHandlerP", "dispatcher"]
+- !private ["6Scenes16MouseMoveHandlerP", "head"]
+- !private ["6Scenes16MouseMoveHandlerP", "headColor"]
+- !private ["6Scenes16MouseMoveHandlerP", "headRect"]
+- !private ["6Scenes16MouseMoveHandlerP", "jersey"]
+- !private ["6Scenes16MouseMoveHandlerP", "jerseyColor"]
+- !private ["6Scenes16MouseMoveHandlerP", "jerseyRect"]
+- ["6Scenes16MouseMoveHandlerP", "name"]
+- ["6Scenes16MouseMoveHandlerP", "onMouseMove"]
+- !private ["6Scenes16MouseMoveHandlerP", "render"]
+- !private ["6Scenes16MouseMoveHandlerP", "setup"]
+- !private ["6Scenes16MouseMoveHandlerP", "teardown"]
+- !private ["4Igis5ColorC4NameO", "brown"]
+- ["6Simple6PlayerC", "Canvas"]
+- !private ["6Simple6PlayerC", "Color"]
+- ["6Simple6PlayerC", "FillStyle"]
+- ["6Simple6PlayerC", "Point"]
+- ["6Simple6PlayerC", "Rect"]
+- ["6Simple6PlayerC", "Rectangle"]
+- ["6Simple6PlayerC", "Size"]
+- ["6Simple6PlayerC", ""]
+- ["6Simple6PlayerC", "deinit"]
+- !private ["6Simple6PlayerC", "dispatcher"]
+- ["6Simple6PlayerC", "head"]
+- ["6Simple6PlayerC", "headColor"]
+- ["6Simple6PlayerC", "headRect"]
+- ["6Simple6PlayerC", "init"]
+- ["6Simple6PlayerC", "jersey"]
+- ["6Simple6PlayerC", "jerseyColor"]
+- ["6Simple6PlayerC", "jerseyRect"]
+- ["6Simple6PlayerC", "name"]
+- ["6Simple6PlayerC", "onMouseMove"]
+- ["6Simple6PlayerC", "render"]
+- ["6Simple6PlayerC", "setup"]
+- ["6Simple6PlayerC", "teardown"]
+- !private ["4Igis5PointV", "init"]
+- !private ["4Igis5PointV", "x"]
+- !private ["4Igis5PointV", "y"]
+- !private ["SY", "brown"]
+- !private ["4Igis4RectV", "init"]
+- !private ["4Igis4RectV", "topLeft"]
+- !private ["4Igis9RectangleC", "init"]
+- !private ["4Igis9RectangleC", "rect"]
+- ["6Scenes16RenderableEntityC", "Canvas"]
+- !private ["6Scenes16RenderableEntityC", "Color"]
+- ["6Scenes16RenderableEntityC", "FillStyle"]
+- ["6Scenes16RenderableEntityC", "Point"]
+- ["6Scenes16RenderableEntityC", "Rect"]
+- ["6Scenes16RenderableEntityC", "Rectangle"]
+- ["6Scenes16RenderableEntityC", "Size"]
+- ["6Scenes16RenderableEntityC", ""]
+- !private ["6Scenes16RenderableEntityC", "dispatcher"]
+- ["6Scenes16RenderableEntityC", "head"]
+- ["6Scenes16RenderableEntityC", "headColor"]
+- ["6Scenes16RenderableEntityC", "headRect"]
+- ["6Scenes16RenderableEntityC", "init"]
+- ["6Scenes16RenderableEntityC", "jersey"]
+- ["6Scenes16RenderableEntityC", "jerseyColor"]
+- ["6Scenes16RenderableEntityC", "jerseyRect"]
+- ["6Scenes16RenderableEntityC", "name"]
+- ["6Scenes16RenderableEntityC", "onMouseMove"]
+- ["6Scenes16RenderableEntityC", "render"]
+- ["6Scenes16RenderableEntityC", "setup"]
+- ["6Scenes16RenderableEntityC", "teardown"]
+- !private ["4Igis4SizeV", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+depends-nominal:
+- !private "4Igis6CanvasC"
+- "4Igis12CanvasObjectC"
+- !private "s12CaseIterableP"
+- !private "4Igis5ColorC"
+- !private "6Scenes10DispatcherC"
+- "SQ"
+- "6Scenes12EventHandlerP"
+- !private "4Igis8FillModeO"
+- !private "4Igis9FillStyleC"
+- !private "SH"
+- "6Scenes18IdentifiableObjectC"
+- "6Scenes16MouseMoveHandlerP"
+- !private "4Igis5ColorC4NameO"
+- "6Simple6PlayerC"
+- !private "4Igis5PointV"
+- !private "SY"
+- !private "4Igis4RectV"
+- !private "4Igis9RectangleC"
+- "6Scenes16RenderableEntityC"
+- !private "4Igis4SizeV"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+depends-dynamic-lookup:
+depends-external:
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOHTTP1.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIO.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/local/lib/merlin/Scenes-1.1.5/Scenes/.build/debug/Scenes.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/Igis.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOConcurrencyHelpers.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOWebSocket.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOSHA1/include/CNIOSHA1.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOHTTPParser/include/CNIOHTTPParser.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOHTTPParser/include/c_nio_http_parser.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOAtomics/include/CNIOAtomics.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOLinux/include/CNIOLinux.h"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOSHA1.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIODarwin.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOHTTPParser.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOAtomics.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOLinux.build/module.modulemap"
+interface-hash: "86930fe4b2fc2ace1725a83e3f979465"

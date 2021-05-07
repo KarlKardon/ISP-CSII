@@ -8,20 +8,20 @@ import Igis
 
 class Background : RenderableEntity {
     // hi
-    let background : Rectangle
-    let backgroundRect : Rect
-    let backgroundColor : FillStyle
+    let grass : Rectangle
+    let grassRect : Rect
+    let grassColor : FillStyle
     init() {
 
-        backgroundRect = Rect(topLeft:Point(x:0,y:0), size:Size(width:10000, height: 10000))
-        background = Rectangle(rect:backgroundRect, fillMode:.fill)
-        backgroundColor = FillStyle(color:Color(.olive))
+        grassRect = Rect(topLeft:Point(x:0,y:0), size:Size(width: 1000000, height: 1000000))
+        grass = Rectangle(rect:grassRect, fillMode:.fill)
+        grassColor = FillStyle(color:Color(red: 0, green: 240, blue: 50))
         
           // Using a meaningful name can be helpful for debugging
           super.init(name:"Background")
     }
 
     override func render(canvas:Canvas) {
-        canvas.render(backgroundColor, background)
+        canvas.render(grassColor, grass)
     }
 }
