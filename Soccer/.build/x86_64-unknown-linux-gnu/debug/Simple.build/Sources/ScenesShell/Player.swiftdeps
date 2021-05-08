@@ -6,10 +6,16 @@ provides-nominal:
 provides-member:
 - ["6Simple6PlayerC", ""]
 depends-top-level:
+- !private "&&"
 - !private "+"
+- !private "<="
+- !private ">="
 - "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
 - "Canvas"
 - !private "Color"
+- "EntityMouseClickHandler"
 - "FillStyle"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
@@ -25,17 +31,51 @@ depends-top-level:
 - !private "head"
 - !private "headColor"
 - !private "headRect"
+- !private "hitTest"
 - !private "jersey"
 - !private "jerseyColor"
 - !private "jerseyRect"
+- !private "nativeFollow"
+- !private "print"
+- !private "shouldFollowMouse"
 depends-member:
 - !private ["4Igis6CanvasC", "render"]
 - ["4Igis12CanvasObjectC", ""]
 - !private ["4Igis12CanvasObjectC", "rect"]
 - !private ["s12CaseIterableP", "brown"]
 - !private ["4Igis5ColorC", "init"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["6Scenes10DispatcherC", "registerEntityMouseClickHandler"]
 - !private ["6Scenes10DispatcherC", "registerMouseMoveHandler"]
-- !private ["6Scenes10DispatcherC", "unregisterMouseMoveHandler"]
+- !private ["6Scenes10DispatcherC", "unregisterEntityMouseClickHandler"]
+- !private ["6Scenes23EntityMouseClickHandlerP", "Color"]
+- !private ["6Scenes23EntityMouseClickHandlerP", "FillStyle"]
+- !private ["6Scenes23EntityMouseClickHandlerP", "Point"]
+- !private ["6Scenes23EntityMouseClickHandlerP", "Rect"]
+- !private ["6Scenes23EntityMouseClickHandlerP", "Rectangle"]
+- !private ["6Scenes23EntityMouseClickHandlerP", "Size"]
+- ["6Scenes23EntityMouseClickHandlerP", ""]
+- !private ["6Scenes23EntityMouseClickHandlerP", "dispatcher"]
+- !private ["6Scenes23EntityMouseClickHandlerP", "head"]
+- !private ["6Scenes23EntityMouseClickHandlerP", "headColor"]
+- !private ["6Scenes23EntityMouseClickHandlerP", "headRect"]
+- !private ["6Scenes23EntityMouseClickHandlerP", "hitTest"]
+- !private ["6Scenes23EntityMouseClickHandlerP", "jersey"]
+- !private ["6Scenes23EntityMouseClickHandlerP", "jerseyColor"]
+- !private ["6Scenes23EntityMouseClickHandlerP", "jerseyRect"]
+- !private ["6Scenes23EntityMouseClickHandlerP", "move"]
+- ["6Scenes23EntityMouseClickHandlerP", "name"]
+- !private ["6Scenes23EntityMouseClickHandlerP", "nativeFollow"]
+- ["6Scenes23EntityMouseClickHandlerP", "onEntityMouseClick"]
+- ["6Scenes23EntityMouseClickHandlerP", "onMouseMove"]
+- !private ["6Scenes23EntityMouseClickHandlerP", "print"]
+- !private ["6Scenes23EntityMouseClickHandlerP", "render"]
+- !private ["6Scenes23EntityMouseClickHandlerP", "setup"]
+- !private ["6Scenes23EntityMouseClickHandlerP", "shouldFollowMouse"]
+- !private ["6Scenes23EntityMouseClickHandlerP", "teardown"]
 - !private ["SQ", "Color"]
 - !private ["SQ", "FillStyle"]
 - !private ["SQ", "Point"]
@@ -49,17 +89,24 @@ depends-member:
 - !private ["SQ", "head"]
 - !private ["SQ", "headColor"]
 - !private ["SQ", "headRect"]
+- !private ["SQ", "height"]
+- !private ["SQ", "hitTest"]
 - !private ["SQ", "init"]
 - !private ["SQ", "jersey"]
 - !private ["SQ", "jerseyColor"]
 - !private ["SQ", "jerseyRect"]
 - !private ["SQ", "move"]
 - ["SQ", "name"]
+- !private ["SQ", "nativeFollow"]
+- ["SQ", "onEntityMouseClick"]
 - ["SQ", "onMouseMove"]
+- !private ["SQ", "print"]
 - !private ["SQ", "render"]
 - !private ["SQ", "setup"]
+- !private ["SQ", "shouldFollowMouse"]
 - !private ["SQ", "teardown"]
 - !private ["SQ", "topLeft"]
+- !private ["SQ", "width"]
 - !private ["SQ", "x"]
 - !private ["SQ", "y"]
 - !private ["6Scenes12EventHandlerP", "Color"]
@@ -73,19 +120,27 @@ depends-member:
 - !private ["6Scenes12EventHandlerP", "head"]
 - !private ["6Scenes12EventHandlerP", "headColor"]
 - !private ["6Scenes12EventHandlerP", "headRect"]
+- !private ["6Scenes12EventHandlerP", "hitTest"]
 - !private ["6Scenes12EventHandlerP", "jersey"]
 - !private ["6Scenes12EventHandlerP", "jerseyColor"]
 - !private ["6Scenes12EventHandlerP", "jerseyRect"]
 - !private ["6Scenes12EventHandlerP", "move"]
 - ["6Scenes12EventHandlerP", "name"]
+- !private ["6Scenes12EventHandlerP", "nativeFollow"]
+- ["6Scenes12EventHandlerP", "onEntityMouseClick"]
 - ["6Scenes12EventHandlerP", "onMouseMove"]
+- !private ["6Scenes12EventHandlerP", "print"]
 - !private ["6Scenes12EventHandlerP", "render"]
 - !private ["6Scenes12EventHandlerP", "setup"]
+- !private ["6Scenes12EventHandlerP", "shouldFollowMouse"]
 - !private ["6Scenes12EventHandlerP", "teardown"]
+- !private ["s32ExpressibleByStringInterpolationP", "StringInterpolation"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
 - !private ["4Igis8FillModeO", "fill"]
 - !private ["4Igis9FillStyleC", "init"]
 - !private ["SH", "brown"]
 - !private ["SH", "fill"]
+- ["6Scenes18IdentifiableObjectC", "Bool"]
 - ["6Scenes18IdentifiableObjectC", "Canvas"]
 - !private ["6Scenes18IdentifiableObjectC", "Color"]
 - ["6Scenes18IdentifiableObjectC", "FillStyle"]
@@ -98,15 +153,20 @@ depends-member:
 - ["6Scenes18IdentifiableObjectC", "head"]
 - ["6Scenes18IdentifiableObjectC", "headColor"]
 - ["6Scenes18IdentifiableObjectC", "headRect"]
+- ["6Scenes18IdentifiableObjectC", "hitTest"]
 - ["6Scenes18IdentifiableObjectC", "init"]
 - ["6Scenes18IdentifiableObjectC", "jersey"]
 - ["6Scenes18IdentifiableObjectC", "jerseyColor"]
 - ["6Scenes18IdentifiableObjectC", "jerseyRect"]
 - ["6Scenes18IdentifiableObjectC", "move"]
 - ["6Scenes18IdentifiableObjectC", "name"]
+- ["6Scenes18IdentifiableObjectC", "nativeFollow"]
+- ["6Scenes18IdentifiableObjectC", "onEntityMouseClick"]
 - ["6Scenes18IdentifiableObjectC", "onMouseMove"]
+- !private ["6Scenes18IdentifiableObjectC", "print"]
 - ["6Scenes18IdentifiableObjectC", "render"]
 - ["6Scenes18IdentifiableObjectC", "setup"]
+- ["6Scenes18IdentifiableObjectC", "shouldFollowMouse"]
 - ["6Scenes18IdentifiableObjectC", "teardown"]
 - !private ["6Scenes16MouseMoveHandlerP", "Color"]
 - !private ["6Scenes16MouseMoveHandlerP", "FillStyle"]
@@ -119,16 +179,22 @@ depends-member:
 - !private ["6Scenes16MouseMoveHandlerP", "head"]
 - !private ["6Scenes16MouseMoveHandlerP", "headColor"]
 - !private ["6Scenes16MouseMoveHandlerP", "headRect"]
+- !private ["6Scenes16MouseMoveHandlerP", "hitTest"]
 - !private ["6Scenes16MouseMoveHandlerP", "jersey"]
 - !private ["6Scenes16MouseMoveHandlerP", "jerseyColor"]
 - !private ["6Scenes16MouseMoveHandlerP", "jerseyRect"]
 - !private ["6Scenes16MouseMoveHandlerP", "move"]
 - ["6Scenes16MouseMoveHandlerP", "name"]
+- !private ["6Scenes16MouseMoveHandlerP", "nativeFollow"]
+- ["6Scenes16MouseMoveHandlerP", "onEntityMouseClick"]
 - ["6Scenes16MouseMoveHandlerP", "onMouseMove"]
+- !private ["6Scenes16MouseMoveHandlerP", "print"]
 - !private ["6Scenes16MouseMoveHandlerP", "render"]
 - !private ["6Scenes16MouseMoveHandlerP", "setup"]
+- !private ["6Scenes16MouseMoveHandlerP", "shouldFollowMouse"]
 - !private ["6Scenes16MouseMoveHandlerP", "teardown"]
 - !private ["4Igis5ColorC4NameO", "brown"]
+- ["6Simple6PlayerC", "Bool"]
 - ["6Simple6PlayerC", "Canvas"]
 - !private ["6Simple6PlayerC", "Color"]
 - ["6Simple6PlayerC", "FillStyle"]
@@ -142,24 +208,32 @@ depends-member:
 - ["6Simple6PlayerC", "head"]
 - ["6Simple6PlayerC", "headColor"]
 - ["6Simple6PlayerC", "headRect"]
+- ["6Simple6PlayerC", "hitTest"]
 - ["6Simple6PlayerC", "init"]
 - ["6Simple6PlayerC", "jersey"]
 - ["6Simple6PlayerC", "jerseyColor"]
 - ["6Simple6PlayerC", "jerseyRect"]
 - ["6Simple6PlayerC", "move"]
 - ["6Simple6PlayerC", "name"]
+- ["6Simple6PlayerC", "nativeFollow"]
+- ["6Simple6PlayerC", "onEntityMouseClick"]
 - ["6Simple6PlayerC", "onMouseMove"]
+- !private ["6Simple6PlayerC", "print"]
 - ["6Simple6PlayerC", "render"]
 - ["6Simple6PlayerC", "setup"]
+- ["6Simple6PlayerC", "shouldFollowMouse"]
 - ["6Simple6PlayerC", "teardown"]
 - !private ["4Igis5PointV", "init"]
 - !private ["4Igis5PointV", "x"]
 - !private ["4Igis5PointV", "y"]
 - !private ["SY", "brown"]
+- !private ["4Igis4RectV", "height"]
 - !private ["4Igis4RectV", "init"]
 - !private ["4Igis4RectV", "topLeft"]
+- !private ["4Igis4RectV", "width"]
 - !private ["4Igis9RectangleC", "init"]
 - !private ["4Igis9RectangleC", "rect"]
+- ["6Scenes16RenderableEntityC", "Bool"]
 - ["6Scenes16RenderableEntityC", "Canvas"]
 - !private ["6Scenes16RenderableEntityC", "Color"]
 - ["6Scenes16RenderableEntityC", "FillStyle"]
@@ -172,17 +246,28 @@ depends-member:
 - ["6Scenes16RenderableEntityC", "head"]
 - ["6Scenes16RenderableEntityC", "headColor"]
 - ["6Scenes16RenderableEntityC", "headRect"]
+- ["6Scenes16RenderableEntityC", "hitTest"]
 - ["6Scenes16RenderableEntityC", "init"]
 - ["6Scenes16RenderableEntityC", "jersey"]
 - ["6Scenes16RenderableEntityC", "jerseyColor"]
 - ["6Scenes16RenderableEntityC", "jerseyRect"]
 - ["6Scenes16RenderableEntityC", "move"]
 - ["6Scenes16RenderableEntityC", "name"]
+- ["6Scenes16RenderableEntityC", "nativeFollow"]
+- ["6Scenes16RenderableEntityC", "onEntityMouseClick"]
 - ["6Scenes16RenderableEntityC", "onMouseMove"]
+- !private ["6Scenes16RenderableEntityC", "print"]
 - ["6Scenes16RenderableEntityC", "render"]
 - ["6Scenes16RenderableEntityC", "setup"]
+- ["6Scenes16RenderableEntityC", "shouldFollowMouse"]
 - ["6Scenes16RenderableEntityC", "teardown"]
 - !private ["4Igis4SizeV", "init"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s27StringInterpolationProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 depends-nominal:
@@ -190,9 +275,13 @@ depends-nominal:
 - "4Igis12CanvasObjectC"
 - !private "s12CaseIterableP"
 - !private "4Igis5ColorC"
+- !private "s23CustomStringConvertibleP"
+- !private "s26DefaultStringInterpolationV"
 - !private "6Scenes10DispatcherC"
+- "6Scenes23EntityMouseClickHandlerP"
 - "SQ"
 - "6Scenes12EventHandlerP"
+- !private "s32ExpressibleByStringInterpolationP"
 - !private "4Igis8FillModeO"
 - !private "4Igis9FillStyleC"
 - !private "SH"
@@ -206,6 +295,9 @@ depends-nominal:
 - !private "4Igis9RectangleC"
 - "6Scenes16RenderableEntityC"
 - !private "4Igis4SizeV"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 depends-dynamic-lookup:
@@ -232,4 +324,4 @@ depends-external:
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOHTTPParser.build/module.modulemap"
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOAtomics.build/module.modulemap"
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOLinux.build/module.modulemap"
-interface-hash: "76f7e9da272b847d22c7153484ad2f73"
+interface-hash: "3b0d15977d3baba33cdb5a80dd15d450"
