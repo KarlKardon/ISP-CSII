@@ -27,6 +27,8 @@ depends-member:
 - ["SQ", "init"]
 - !private ["SQ", "insert"]
 - !private ["SQ", "interactionLayer"]
+- ["6Scenes12EventHandlerP", ""]
+- ["6Scenes12EventHandlerP", "init"]
 - ["6Simple15ForegroundLayerC", "init"]
 - ["6Scenes18IdentifiableObjectC", "BackgroundLayer"]
 - ["6Scenes18IdentifiableObjectC", "ForegroundLayer"]
@@ -38,6 +40,7 @@ depends-member:
 - !private ["6Scenes18IdentifiableObjectC", "insert"]
 - ["6Scenes18IdentifiableObjectC", "interactionLayer"]
 - ["6Simple16InteractionLayerC", "init"]
+- ["6Scenes14KeyDownHandlerP", "init"]
 - ["6Scenes5LayerC", ""]
 - ["6Simple9MainSceneC", "BackgroundLayer"]
 - ["6Simple9MainSceneC", "ForegroundLayer"]
@@ -65,9 +68,11 @@ depends-member:
 depends-nominal:
 - "6Simple15BackgroundLayerC"
 - "SQ"
+- "6Scenes12EventHandlerP"
 - "6Simple15ForegroundLayerC"
 - "6Scenes18IdentifiableObjectC"
 - "6Simple16InteractionLayerC"
+- "6Scenes14KeyDownHandlerP"
 - "6Scenes5LayerC"
 - "6Simple9MainSceneC"
 - "6Scenes5SceneC"

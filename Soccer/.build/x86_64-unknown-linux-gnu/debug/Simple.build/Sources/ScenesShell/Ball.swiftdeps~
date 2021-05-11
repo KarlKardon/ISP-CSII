@@ -1,0 +1,242 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Ball"
+provides-nominal:
+- "6Simple4BallC"
+provides-member:
+- ["6Simple4BallC", ""]
+depends-top-level:
+- !private "*"
+- !private "+"
+- !private "+="
+- !private "-"
+- !private "<"
+- !private ">"
+- "AssignmentPrecedence"
+- "Ball"
+- "Canvas"
+- "Color"
+- "Ellipse"
+- "FillStyle"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- !private "InteractionLayer"
+- "Point"
+- "Rect"
+- "RenderableEntity"
+- "Size"
+- "StrokeStyle"
+- !private "ellipse"
+- !private "fillStyle"
+- !private "strokeStyle"
+- !private "velocity"
+- !private "||"
+depends-member:
+- !private ["s18AdditiveArithmeticP", ""]
+- ["6Simple4BallC", "Canvas"]
+- ["6Simple4BallC", "Color"]
+- ["6Simple4BallC", "Ellipse"]
+- ["6Simple4BallC", "FillStyle"]
+- ["6Simple4BallC", "Int"]
+- !private ["6Simple4BallC", "InteractionLayer"]
+- ["6Simple4BallC", "Point"]
+- ["6Simple4BallC", "Rect"]
+- ["6Simple4BallC", "Size"]
+- ["6Simple4BallC", "StrokeStyle"]
+- ["6Simple4BallC", "boundingRect"]
+- ["6Simple4BallC", "calculate"]
+- ["6Simple4BallC", "changeVelocity"]
+- ["6Simple4BallC", "deinit"]
+- ["6Simple4BallC", "ellipse"]
+- ["6Simple4BallC", "fillStyle"]
+- ["6Simple4BallC", "init"]
+- ["6Simple4BallC", "render"]
+- ["6Simple4BallC", "setup"]
+- ["6Simple4BallC", "strokeStyle"]
+- ["6Simple4BallC", "velocity"]
+- !private ["4Igis6CanvasC", "render"]
+- ["4Igis12CanvasObjectC", ""]
+- !private ["4Igis12CanvasObjectC", "center"]
+- !private ["4Igis12CanvasObjectC", "radiusX"]
+- !private ["4Igis12CanvasObjectC", "radiusY"]
+- !private ["4Igis12CanvasObjectC", "rect"]
+- ["s12CaseIterableP", "black"]
+- ["s12CaseIterableP", "white"]
+- !private ["Sl", "_copyToContiguousArray"]
+- !private ["Sl", "underestimatedCount"]
+- ["4Igis5ColorC", "init"]
+- !private ["4Igis7EllipseC", "center"]
+- ["4Igis7EllipseC", "init"]
+- !private ["4Igis7EllipseC", "radiusX"]
+- !private ["4Igis7EllipseC", "radiusY"]
+- ["SQ", "Color"]
+- ["SQ", "Ellipse"]
+- ["SQ", "FillStyle"]
+- !private ["SQ", "InteractionLayer"]
+- ["SQ", "Point"]
+- !private ["SQ", "Rect"]
+- !private ["SQ", "Size"]
+- ["SQ", "StrokeStyle"]
+- ["SQ", ""]
+- ["SQ", "black"]
+- !private ["SQ", "calculate"]
+- !private ["SQ", "changeVelocity"]
+- !private ["SQ", "ellipse"]
+- !private ["SQ", "field"]
+- !private ["SQ", "fieldCircle"]
+- ["SQ", "fillAndStroke"]
+- !private ["SQ", "fillStyle"]
+- !private ["SQ", "height"]
+- ["SQ", "init"]
+- !private ["SQ", "render"]
+- !private ["SQ", "setup"]
+- !private ["SQ", "size"]
+- !private ["SQ", "strokeStyle"]
+- !private ["SQ", "topLeft"]
+- !private ["SQ", "velocity"]
+- ["SQ", "white"]
+- !private ["SQ", "width"]
+- !private ["SQ", "x"]
+- !private ["SQ", "y"]
+- !private ["6Scenes12EventHandlerP", ""]
+- !private ["6Scenes12EventHandlerP", "field"]
+- !private ["s27ExpressibleByIntegerLiteralP", ""]
+- !private ["6Simple5FieldC", "field"]
+- !private ["6Simple5FieldC", "fieldCircle"]
+- ["4Igis8FillModeO", "fillAndStroke"]
+- ["4Igis9FillStyleC", "init"]
+- ["SH", "black"]
+- ["SH", "fillAndStroke"]
+- ["SH", "white"]
+- ["6Scenes18IdentifiableObjectC", "Canvas"]
+- ["6Scenes18IdentifiableObjectC", "Color"]
+- ["6Scenes18IdentifiableObjectC", "Ellipse"]
+- ["6Scenes18IdentifiableObjectC", "FillStyle"]
+- ["6Scenes18IdentifiableObjectC", "Int"]
+- !private ["6Scenes18IdentifiableObjectC", "InteractionLayer"]
+- ["6Scenes18IdentifiableObjectC", "Point"]
+- ["6Scenes18IdentifiableObjectC", "Rect"]
+- ["6Scenes18IdentifiableObjectC", "Size"]
+- ["6Scenes18IdentifiableObjectC", "StrokeStyle"]
+- ["6Scenes18IdentifiableObjectC", ""]
+- ["6Scenes18IdentifiableObjectC", "boundingRect"]
+- ["6Scenes18IdentifiableObjectC", "calculate"]
+- ["6Scenes18IdentifiableObjectC", "changeVelocity"]
+- ["6Scenes18IdentifiableObjectC", "ellipse"]
+- !private ["6Scenes18IdentifiableObjectC", "field"]
+- !private ["6Scenes18IdentifiableObjectC", "fieldCircle"]
+- ["6Scenes18IdentifiableObjectC", "fillStyle"]
+- ["6Scenes18IdentifiableObjectC", "init"]
+- ["6Scenes18IdentifiableObjectC", "render"]
+- ["6Scenes18IdentifiableObjectC", "setup"]
+- ["6Scenes18IdentifiableObjectC", "strokeStyle"]
+- ["6Scenes18IdentifiableObjectC", "velocity"]
+- !private ["6Simple16InteractionLayerC", "field"]
+- !private ["6Scenes14KeyDownHandlerP", "field"]
+- ["6Scenes5LayerC", ""]
+- !private ["6Scenes5LayerC", "field"]
+- ["4Igis5ColorC4NameO", "black"]
+- ["4Igis5ColorC4NameO", "white"]
+- !private ["Sj", ""]
+- ["4Igis5PointV", "init"]
+- !private ["4Igis5PointV", "x"]
+- !private ["4Igis5PointV", "y"]
+- ["SY", "black"]
+- ["SY", "white"]
+- !private ["4Igis4RectV", "init"]
+- !private ["4Igis4RectV", "size"]
+- !private ["4Igis4RectV", "topLeft"]
+- !private ["4Igis9RectangleC", "rect"]
+- ["6Scenes16RenderableEntityC", "Canvas"]
+- ["6Scenes16RenderableEntityC", "Color"]
+- ["6Scenes16RenderableEntityC", "Ellipse"]
+- ["6Scenes16RenderableEntityC", "FillStyle"]
+- ["6Scenes16RenderableEntityC", "Int"]
+- !private ["6Scenes16RenderableEntityC", "InteractionLayer"]
+- ["6Scenes16RenderableEntityC", "Point"]
+- ["6Scenes16RenderableEntityC", "Rect"]
+- ["6Scenes16RenderableEntityC", "Size"]
+- ["6Scenes16RenderableEntityC", "StrokeStyle"]
+- ["6Scenes16RenderableEntityC", ""]
+- ["6Scenes16RenderableEntityC", "boundingRect"]
+- ["6Scenes16RenderableEntityC", "calculate"]
+- ["6Scenes16RenderableEntityC", "changeVelocity"]
+- ["6Scenes16RenderableEntityC", "ellipse"]
+- !private ["6Scenes16RenderableEntityC", "field"]
+- !private ["6Scenes16RenderableEntityC", "fieldCircle"]
+- ["6Scenes16RenderableEntityC", "fillStyle"]
+- ["6Scenes16RenderableEntityC", "init"]
+- ["6Scenes16RenderableEntityC", "render"]
+- ["6Scenes16RenderableEntityC", "setup"]
+- ["6Scenes16RenderableEntityC", "strokeStyle"]
+- ["6Scenes16RenderableEntityC", "velocity"]
+- !private ["ST", "_copyContents"]
+- !private ["ST", "_copyToContiguousArray"]
+- !private ["ST", "_customContainsEquatableElement"]
+- !private ["ST", "makeIterator"]
+- !private ["ST", "underestimatedCount"]
+- !private ["ST", "withContiguousStorageIfAvailable"]
+- !private ["4Igis4SizeV", "height"]
+- !private ["4Igis4SizeV", "init"]
+- !private ["4Igis4SizeV", "width"]
+- ["4Igis11StrokeStyleC", "init"]
+- ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- "6Simple4BallC"
+- !private "4Igis6CanvasC"
+- "4Igis12CanvasObjectC"
+- "s12CaseIterableP"
+- !private "Sl"
+- "4Igis5ColorC"
+- "4Igis7EllipseC"
+- "SQ"
+- !private "6Scenes12EventHandlerP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "6Simple5FieldC"
+- "4Igis8FillModeO"
+- "4Igis9FillStyleC"
+- "SH"
+- "6Scenes18IdentifiableObjectC"
+- !private "6Simple16InteractionLayerC"
+- !private "6Scenes14KeyDownHandlerP"
+- "6Scenes5LayerC"
+- "4Igis5ColorC4NameO"
+- !private "Sj"
+- "4Igis5PointV"
+- "SY"
+- !private "4Igis4RectV"
+- !private "4Igis9RectangleC"
+- "6Scenes16RenderableEntityC"
+- !private "ST"
+- !private "4Igis4SizeV"
+- "4Igis11StrokeStyleC"
+- "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+depends-dynamic-lookup:
+depends-external:
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOHTTP1.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIO.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/local/lib/merlin/Scenes-1.1.5/Scenes/.build/debug/Scenes.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/Igis.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOConcurrencyHelpers.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOWebSocket.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOSHA1/include/CNIOSHA1.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOHTTPParser/include/CNIOHTTPParser.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOHTTPParser/include/c_nio_http_parser.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOAtomics/include/CNIOAtomics.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOLinux/include/CNIOLinux.h"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOSHA1.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIODarwin.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOHTTPParser.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOAtomics.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOLinux.build/module.modulemap"
+interface-hash: "dce6b6a743814603b26736c7069295fb"
