@@ -11,8 +11,8 @@ class InteractionLayer : Layer, KeyDownHandler {
 
     
     let scoreboard = Scoreboard()
-    static let player1 = Player(teamJerseyColor : FillStyle(color:Color(.blue)))
-    static let player2 = Player(teamJerseyColor : FillStyle(color:Color(.red)))
+    static let player1 = Player(teamJerseyColor : FillStyle(color:Color(.blue)), isMerlin: true)
+    static let player2 = Player(teamJerseyColor : FillStyle(color:Color(.red)), isMerlin: false)
     static let field = Field()
     static let ball = Ball()
 
@@ -44,14 +44,17 @@ class InteractionLayer : Layer, KeyDownHandler {
     }
 
     override func preSetup(canvasSize: Size, canvas: Canvas) {
+       
         Self.ball.velocity.x = Self.ball.velocity.x/2
         Self.ball.velocity.y = Self.ball.velocity.y/2
         Self.player1.changeVelocity(velocityX:30, velocityY:30)
         Self.player2.changeVelocity(velocityX:30, velocityY:30)
+        
         //Moving players to starting positions
-        Self.player2.move(to: Point(x: Self.field.field.rect.topLeft.x + Self.field.field.rect.size.center.x + 100, y: Self.field.fieldCircle.center.y))
-        Self.player1.move(to: Point(x: Self.field.field.rect.topLeft.x + Self.field.field.rect.size.center.x - 100, y: Self.field.fieldCircle.center.y))
-
+        
+        Self.player1.move(to: Point(x: canvasSize.center.x - 200, y: canvasSize.center.y))
+        Self.player2.move(to: Point(x: canvasSize.center.x + 200, y: canvasSize.center.y))
+        
         //Keydownhandler business
         dispatcher.registerKeyDownHandler(handler: self)
     }
@@ -155,13 +158,13 @@ class InteractionLayer : Layer, KeyDownHandler {
         //Increasing score
         //////////////////
         
-        if ballGoal1Containment.contains(.overlapsRight) && ballGoal1Containment.contains(.contact) {
+        if ballGoal1Containment.contains(.contact) {
             scoreboard.increasePlayer2Score()
             Self.ball.move(to: Self.field.fieldCircle.center)
             Self.ball.velocity.x = 20
         }
 
-        if ballGoal2Containment.contains(.overlapsLeft) && ballGoal2Containment.contains(.contact){
+        if ballGoal2Containment.contains(.contact){
             scoreboard.increasePlayer1Score()
             Self.ball.move(to: Self.field.fieldCircle.center)
             Self.ball.velocity.x = -20

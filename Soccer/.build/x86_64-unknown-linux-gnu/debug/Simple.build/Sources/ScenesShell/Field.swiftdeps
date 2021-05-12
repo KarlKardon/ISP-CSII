@@ -16,6 +16,7 @@ depends-top-level:
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
 - "LineWidth"
+- "Lines"
 - !private "Point"
 - "Rect"
 - "Rectangle"
@@ -23,6 +24,7 @@ depends-top-level:
 - "Size"
 - "StrokeStyle"
 - !private "field"
+- !private "fieldCenterLine"
 - !private "fieldCircle"
 - !private "fieldLineThickness"
 - !private "goal1"
@@ -42,6 +44,7 @@ depends-member:
 - !private ["SQ", "Color"]
 - !private ["SQ", "Ellipse"]
 - !private ["SQ", "LineWidth"]
+- !private ["SQ", "Lines"]
 - !private ["SQ", "Point"]
 - !private ["SQ", "Rect"]
 - !private ["SQ", "Rectangle"]
@@ -50,6 +53,7 @@ depends-member:
 - ["SQ", ""]
 - !private ["SQ", "center"]
 - !private ["SQ", "field"]
+- !private ["SQ", "fieldCenterLine"]
 - !private ["SQ", "fieldCircle"]
 - !private ["SQ", "fieldLineThickness"]
 - !private ["SQ", "goal1"]
@@ -72,6 +76,7 @@ depends-member:
 - !private ["6Simple5FieldC", "Color"]
 - ["6Simple5FieldC", "Ellipse"]
 - ["6Simple5FieldC", "LineWidth"]
+- ["6Simple5FieldC", "Lines"]
 - !private ["6Simple5FieldC", "Point"]
 - ["6Simple5FieldC", "Rect"]
 - ["6Simple5FieldC", "Rectangle"]
@@ -79,6 +84,7 @@ depends-member:
 - ["6Simple5FieldC", "StrokeStyle"]
 - ["6Simple5FieldC", "deinit"]
 - ["6Simple5FieldC", "field"]
+- ["6Simple5FieldC", "fieldCenterLine"]
 - ["6Simple5FieldC", "fieldCircle"]
 - ["6Simple5FieldC", "fieldLineThickness"]
 - ["6Simple5FieldC", "goal1"]
@@ -97,6 +103,7 @@ depends-member:
 - !private ["6Scenes18IdentifiableObjectC", "Color"]
 - ["6Scenes18IdentifiableObjectC", "Ellipse"]
 - ["6Scenes18IdentifiableObjectC", "LineWidth"]
+- ["6Scenes18IdentifiableObjectC", "Lines"]
 - !private ["6Scenes18IdentifiableObjectC", "Point"]
 - ["6Scenes18IdentifiableObjectC", "Rect"]
 - ["6Scenes18IdentifiableObjectC", "Rectangle"]
@@ -104,6 +111,7 @@ depends-member:
 - ["6Scenes18IdentifiableObjectC", "StrokeStyle"]
 - ["6Scenes18IdentifiableObjectC", ""]
 - ["6Scenes18IdentifiableObjectC", "field"]
+- ["6Scenes18IdentifiableObjectC", "fieldCenterLine"]
 - ["6Scenes18IdentifiableObjectC", "fieldCircle"]
 - ["6Scenes18IdentifiableObjectC", "fieldLineThickness"]
 - ["6Scenes18IdentifiableObjectC", "goal1"]
@@ -116,6 +124,7 @@ depends-member:
 - ["6Scenes18IdentifiableObjectC", "setup"]
 - ["6Scenes18IdentifiableObjectC", "strokeStyle"]
 - !private ["4Igis9LineWidthC", "init"]
+- !private ["4Igis5LinesC", "init"]
 - !private ["4Igis5ColorC4NameO", "white"]
 - !private ["4Igis5PointV", "init"]
 - !private ["4Igis5PointV", "x"]
@@ -130,6 +139,7 @@ depends-member:
 - !private ["6Scenes16RenderableEntityC", "Color"]
 - ["6Scenes16RenderableEntityC", "Ellipse"]
 - ["6Scenes16RenderableEntityC", "LineWidth"]
+- ["6Scenes16RenderableEntityC", "Lines"]
 - !private ["6Scenes16RenderableEntityC", "Point"]
 - ["6Scenes16RenderableEntityC", "Rect"]
 - ["6Scenes16RenderableEntityC", "Rectangle"]
@@ -137,6 +147,7 @@ depends-member:
 - ["6Scenes16RenderableEntityC", "StrokeStyle"]
 - ["6Scenes16RenderableEntityC", ""]
 - ["6Scenes16RenderableEntityC", "field"]
+- ["6Scenes16RenderableEntityC", "fieldCenterLine"]
 - ["6Scenes16RenderableEntityC", "fieldCircle"]
 - ["6Scenes16RenderableEntityC", "fieldLineThickness"]
 - ["6Scenes16RenderableEntityC", "goal1"]
@@ -167,6 +178,7 @@ depends-nominal:
 - !private "SH"
 - "6Scenes18IdentifiableObjectC"
 - !private "4Igis9LineWidthC"
+- !private "4Igis5LinesC"
 - !private "4Igis5ColorC4NameO"
 - !private "4Igis5PointV"
 - !private "SY"
@@ -201,4 +213,4 @@ depends-external:
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOHTTPParser.build/module.modulemap"
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOAtomics.build/module.modulemap"
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOLinux.build/module.modulemap"
-interface-hash: "fa341a75780c62e76739c87a0dfdd200"
+interface-hash: "689dcdbb20bb85b93e3e8c308cc8f23d"

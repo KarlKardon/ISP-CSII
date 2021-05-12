@@ -23,6 +23,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Ball"
 - "Bool"
+- "BooleanLiteralType"
 - "Canvas"
 - "Color"
 - "Field"
@@ -409,6 +410,7 @@ depends-member:
 - !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["6Scenes6ZOrderO", "front"]
 - !private ["10Foundation13_CFBridgeableP", "contains"]
+- ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
@@ -471,6 +473,7 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "6Scenes6ZOrderO"
 - !private "10Foundation13_CFBridgeableP"
+- "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
@@ -501,4 +504,4 @@ depends-external:
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOHTTPParser.build/module.modulemap"
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOAtomics.build/module.modulemap"
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOLinux.build/module.modulemap"
-interface-hash: "76e279ca11d29e4fa4ccd08bc1a09fa4"
+interface-hash: "1c4b0ceb18c2f4226f1f0fce3983f528"

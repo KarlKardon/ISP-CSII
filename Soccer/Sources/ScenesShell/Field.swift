@@ -12,6 +12,7 @@ class Field: RenderableEntity {
     let goal2 : Rectangle
     let goalBox1 : Rectangle
     let goalBox2: Rectangle
+    var fieldCenterLine : Lines
     
     init() {
 
@@ -21,6 +22,7 @@ class Field: RenderableEntity {
         fieldLineThickness = LineWidth(width: 12)
         fieldCircle = Ellipse(center:Point(x:0,y:0), radiusX:50, radiusY: 50)
         strokeStyle = StrokeStyle(color:Color(.white))
+        fieldCenterLine = Lines(from:Point(x:0, y:0), to:Point(x:0, y:0))
 
         //goals
         let goal1Rect = Rect(topLeft: Point(x:0, y:0), size:Size(width: 0, height:0))
@@ -45,6 +47,7 @@ class Field: RenderableEntity {
         field.rect.topLeft = Point(x: canvasSize.center.x - 750, y: canvasSize.center.y - 300)
         field.rect.size = Size(width: 1500, height: 700)
         fieldCircle.center = Point(x:canvasSize.center.x, y:canvasSize.center.y + 50)
+        fieldCenterLine = Lines(from:Point(x:fieldCircle.center.x, y:field.rect.topLeft.y), to:Point(x:fieldCircle.center.x, y:field.rect.topLeft.y + field.rect.size.height))
 
         //goal dimensions
         goal1.rect.topLeft = Point(x:field.rect.topLeft.x - 49, y:field.rect.topLeft.y + field.rect.size.center.y - 100)
@@ -61,6 +64,6 @@ class Field: RenderableEntity {
     }
 
     override func render(canvas:Canvas) {
-        canvas.render(fieldLineThickness, strokeStyle, field, fieldCircle, goal1, goal2, goalBox1, goalBox2)
+        canvas.render(fieldLineThickness, strokeStyle, field, fieldCircle, goal1, goal2, goalBox1, goalBox2, fieldCenterLine)
     }
 }

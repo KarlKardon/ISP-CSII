@@ -10,6 +10,7 @@ depends-top-level:
 - !private "+"
 - !private "+="
 - "AssignmentPrecedence"
+- "Bool"
 - "Canvas"
 - !private "Color"
 - "FillStyle"
@@ -23,9 +24,13 @@ depends-top-level:
 - "RenderableEntity"
 - "Size"
 - !private "StringLiteralType"
+- !private "beard"
+- !private "beardColor"
+- !private "beardRect"
 - !private "head"
 - !private "headColor"
 - !private "headRect"
+- !private "isMerlinDeterminator"
 - !private "jersey"
 - !private "jerseyColor"
 - !private "jerseyRect"
@@ -34,7 +39,8 @@ depends-member:
 - !private ["4Igis6CanvasC", "render"]
 - ["4Igis12CanvasObjectC", ""]
 - !private ["4Igis12CanvasObjectC", "rect"]
-- !private ["s12CaseIterableP", "brown"]
+- !private ["s12CaseIterableP", "burlywood"]
+- !private ["s12CaseIterableP", "white"]
 - !private ["4Igis5ColorC", "init"]
 - !private ["SQ", "Color"]
 - !private ["SQ", "FillStyle"]
@@ -43,7 +49,10 @@ depends-member:
 - !private ["SQ", "Rectangle"]
 - !private ["SQ", "Size"]
 - ["SQ", ""]
-- !private ["SQ", "brown"]
+- !private ["SQ", "beard"]
+- !private ["SQ", "beardColor"]
+- !private ["SQ", "beardRect"]
+- !private ["SQ", "burlywood"]
 - !private ["SQ", "calculate"]
 - !private ["SQ", "changeVelocity"]
 - !private ["SQ", "fill"]
@@ -52,6 +61,7 @@ depends-member:
 - !private ["SQ", "headRect"]
 - !private ["SQ", "height"]
 - !private ["SQ", "init"]
+- !private ["SQ", "isMerlinDeterminator"]
 - !private ["SQ", "jersey"]
 - !private ["SQ", "jerseyColor"]
 - !private ["SQ", "jerseyRect"]
@@ -66,13 +76,16 @@ depends-member:
 - !private ["SQ", "teardown"]
 - !private ["SQ", "topLeft"]
 - !private ["SQ", "velocity"]
+- !private ["SQ", "white"]
 - !private ["SQ", "width"]
 - !private ["SQ", "x"]
 - !private ["SQ", "y"]
 - !private ["4Igis8FillModeO", "fill"]
 - !private ["4Igis9FillStyleC", "init"]
-- !private ["SH", "brown"]
+- !private ["SH", "burlywood"]
 - !private ["SH", "fill"]
+- !private ["SH", "white"]
+- ["6Scenes18IdentifiableObjectC", "Bool"]
 - ["6Scenes18IdentifiableObjectC", "Canvas"]
 - !private ["6Scenes18IdentifiableObjectC", "Color"]
 - ["6Scenes18IdentifiableObjectC", "FillStyle"]
@@ -82,6 +95,9 @@ depends-member:
 - ["6Scenes18IdentifiableObjectC", "Rectangle"]
 - ["6Scenes18IdentifiableObjectC", "Size"]
 - ["6Scenes18IdentifiableObjectC", ""]
+- ["6Scenes18IdentifiableObjectC", "beard"]
+- ["6Scenes18IdentifiableObjectC", "beardColor"]
+- ["6Scenes18IdentifiableObjectC", "beardRect"]
 - ["6Scenes18IdentifiableObjectC", "boundingRect"]
 - ["6Scenes18IdentifiableObjectC", "calculate"]
 - ["6Scenes18IdentifiableObjectC", "changeVelocity"]
@@ -89,6 +105,7 @@ depends-member:
 - ["6Scenes18IdentifiableObjectC", "headColor"]
 - ["6Scenes18IdentifiableObjectC", "headRect"]
 - ["6Scenes18IdentifiableObjectC", "init"]
+- ["6Scenes18IdentifiableObjectC", "isMerlinDeterminator"]
 - ["6Scenes18IdentifiableObjectC", "jersey"]
 - ["6Scenes18IdentifiableObjectC", "jerseyColor"]
 - ["6Scenes18IdentifiableObjectC", "jerseyRect"]
@@ -101,7 +118,9 @@ depends-member:
 - ["6Scenes18IdentifiableObjectC", "setup"]
 - ["6Scenes18IdentifiableObjectC", "teardown"]
 - ["6Scenes18IdentifiableObjectC", "velocity"]
-- !private ["4Igis5ColorC4NameO", "brown"]
+- !private ["4Igis5ColorC4NameO", "burlywood"]
+- !private ["4Igis5ColorC4NameO", "white"]
+- ["6Simple6PlayerC", "Bool"]
 - ["6Simple6PlayerC", "Canvas"]
 - !private ["6Simple6PlayerC", "Color"]
 - ["6Simple6PlayerC", "FillStyle"]
@@ -110,6 +129,9 @@ depends-member:
 - ["6Simple6PlayerC", "Rect"]
 - ["6Simple6PlayerC", "Rectangle"]
 - ["6Simple6PlayerC", "Size"]
+- ["6Simple6PlayerC", "beard"]
+- ["6Simple6PlayerC", "beardColor"]
+- ["6Simple6PlayerC", "beardRect"]
 - ["6Simple6PlayerC", "boundingRect"]
 - ["6Simple6PlayerC", "calculate"]
 - ["6Simple6PlayerC", "changeVelocity"]
@@ -118,6 +140,7 @@ depends-member:
 - ["6Simple6PlayerC", "headColor"]
 - ["6Simple6PlayerC", "headRect"]
 - ["6Simple6PlayerC", "init"]
+- ["6Simple6PlayerC", "isMerlinDeterminator"]
 - ["6Simple6PlayerC", "jersey"]
 - ["6Simple6PlayerC", "jerseyColor"]
 - ["6Simple6PlayerC", "jerseyRect"]
@@ -133,12 +156,14 @@ depends-member:
 - !private ["4Igis5PointV", "init"]
 - !private ["4Igis5PointV", "x"]
 - !private ["4Igis5PointV", "y"]
-- !private ["SY", "brown"]
+- !private ["SY", "burlywood"]
+- !private ["SY", "white"]
 - !private ["4Igis4RectV", "init"]
 - !private ["4Igis4RectV", "size"]
 - !private ["4Igis4RectV", "topLeft"]
 - !private ["4Igis9RectangleC", "init"]
 - !private ["4Igis9RectangleC", "rect"]
+- ["6Scenes16RenderableEntityC", "Bool"]
 - ["6Scenes16RenderableEntityC", "Canvas"]
 - !private ["6Scenes16RenderableEntityC", "Color"]
 - ["6Scenes16RenderableEntityC", "FillStyle"]
@@ -148,6 +173,9 @@ depends-member:
 - ["6Scenes16RenderableEntityC", "Rectangle"]
 - ["6Scenes16RenderableEntityC", "Size"]
 - ["6Scenes16RenderableEntityC", ""]
+- ["6Scenes16RenderableEntityC", "beard"]
+- ["6Scenes16RenderableEntityC", "beardColor"]
+- ["6Scenes16RenderableEntityC", "beardRect"]
 - ["6Scenes16RenderableEntityC", "boundingRect"]
 - ["6Scenes16RenderableEntityC", "calculate"]
 - ["6Scenes16RenderableEntityC", "changeVelocity"]
@@ -155,6 +183,7 @@ depends-member:
 - ["6Scenes16RenderableEntityC", "headColor"]
 - ["6Scenes16RenderableEntityC", "headRect"]
 - ["6Scenes16RenderableEntityC", "init"]
+- ["6Scenes16RenderableEntityC", "isMerlinDeterminator"]
 - ["6Scenes16RenderableEntityC", "jersey"]
 - ["6Scenes16RenderableEntityC", "jerseyColor"]
 - ["6Scenes16RenderableEntityC", "jerseyRect"]
@@ -216,4 +245,4 @@ depends-external:
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOHTTPParser.build/module.modulemap"
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOAtomics.build/module.modulemap"
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOLinux.build/module.modulemap"
-interface-hash: "9a18c723b8a0e5de1af7cc243bea93f8"
+interface-hash: "6d83469369859f11a2d60ac7af47f657"

@@ -13,26 +13,40 @@ class Player : RenderableEntity {
     var jerseyRect : Rect
     var headRect : Rect
     var velocity : Point
+    let beard : Rectangle
+    let beardRect : Rect
+    let beardColor : FillStyle
+  //  let hat = Path(fillMode: .fill)
+    let isMerlinDeterminator : Bool
     
-    init(teamJerseyColor: FillStyle) {
+    init(teamJerseyColor: FillStyle, isMerlin: Bool) {
 
-        jerseyRect = Rect(topLeft:Point(x:0, y:0), size:Size(width:50, height: 100))
+        isMerlinDeterminator = isMerlin
+        jerseyRect = Rect(topLeft:Point(x:0, y:0), size:Size(width:50, height: 90))
         jersey = Rectangle(rect:jerseyRect, fillMode:.fill)
         jerseyColor = teamJerseyColor
         headRect = Rect(topLeft:Point(x:0, y:0), size:Size(width:50, height:25))
         head = Rectangle(rect:headRect, fillMode:.fill)
-        headColor = FillStyle(color:Color(.brown))
+        headColor = FillStyle(color:Color(.burlywood))
         velocity = Point(x:0, y:0)
+
+        beardRect = Rect(topLeft:Point(x:0, y:0), size:Size(width:30, height: 50))
+        beard = Rectangle(rect:beardRect, fillMode: .fill)
+        beardColor = FillStyle(color:Color(.white))
+        
         
         super.init(name:"Player")
     }
 
     override func render(canvas: Canvas) {
         canvas.render(jerseyColor, jersey, headColor, head)
+        if isMerlinDeterminator {
+            canvas.render(beardColor, beard)
+        }
     }
 
     override func setup(canvasSize:Size, canvas:Canvas) {
-        
+    
     }
 
     override func teardown() {
@@ -40,9 +54,9 @@ class Player : RenderableEntity {
 
     
     func move(to point:Point) {
-        jersey.rect.topLeft = Point(x:point.x, y: point.y + 50)
+        jersey.rect.topLeft = Point(x:point.x, y: point.y + 25)
         head.rect.topLeft = point
-        
+        beard.rect.topLeft = Point(x:point.x + 20, y: point.y + 25)
     }
     
     public func changeVelocity(velocityX:Int, velocityY:Int) {
@@ -54,21 +68,25 @@ class Player : RenderableEntity {
     func moveRight() {
         jersey.rect.topLeft.x += velocity.x
         head.rect.topLeft.x += velocity.x
+        beard.rect.topLeft.x += velocity.x
     }
 
     func moveLeft() {
         jersey.rect.topLeft.x += velocity.x * -1
         head.rect.topLeft.x += velocity.x * -1
+        beard.rect.topLeft.x += velocity.x * -1
     }
 
     func moveUp() {
         jersey.rect.topLeft.y += velocity.y * -1
         head.rect.topLeft.y += velocity.y * -1
+        beard.rect.topLeft.y += velocity.y * -1
     }
 
     func moveDown() {
         jersey.rect.topLeft.y += velocity.y 
-        head.rect.topLeft.y += velocity.y 
+        head.rect.topLeft.y += velocity.y
+        beard.rect.topLeft.y += velocity.y
     }
 
     override func boundingRect() -> Rect {

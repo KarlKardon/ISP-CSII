@@ -31,12 +31,18 @@ depends-top-level:
 - !private "player2Score"
 - !private "player2ScoreText"
 - !private "textFillStyle"
+- !private "title1"
+- !private "title1FillStyle"
+- !private "title2"
+- !private "title2FillStyle"
 depends-member:
 - !private ["4Igis6CanvasC", "render"]
 - ["4Igis12CanvasObjectC", ""]
 - !private ["4Igis12CanvasObjectC", "font"]
 - !private ["4Igis12CanvasObjectC", "rect"]
 - !private ["4Igis12CanvasObjectC", "text"]
+- !private ["s12CaseIterableP", "blue"]
+- !private ["s12CaseIterableP", "red"]
 - !private ["s12CaseIterableP", "white"]
 - !private ["4Igis5ColorC", "init"]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
@@ -50,6 +56,7 @@ depends-member:
 - !private ["SQ", "Point"]
 - !private ["SQ", "Text"]
 - ["SQ", ""]
+- !private ["SQ", "blue"]
 - !private ["SQ", "calculate"]
 - !private ["SQ", "center"]
 - !private ["SQ", "field"]
@@ -62,9 +69,14 @@ depends-member:
 - !private ["SQ", "player1ScoreText"]
 - !private ["SQ", "player2Score"]
 - !private ["SQ", "player2ScoreText"]
+- !private ["SQ", "red"]
 - !private ["SQ", "render"]
 - !private ["SQ", "setup"]
 - !private ["SQ", "textFillStyle"]
+- !private ["SQ", "title1"]
+- !private ["SQ", "title1FillStyle"]
+- !private ["SQ", "title2"]
+- !private ["SQ", "title2FillStyle"]
 - !private ["SQ", "topLeft"]
 - !private ["SQ", "white"]
 - !private ["SQ", "x"]
@@ -75,7 +87,9 @@ depends-member:
 - !private ["6Simple5FieldC", "init"]
 - !private ["4Igis8FillModeO", "fill"]
 - !private ["4Igis9FillStyleC", "init"]
+- !private ["SH", "blue"]
 - !private ["SH", "fill"]
+- !private ["SH", "red"]
 - !private ["SH", "white"]
 - ["6Scenes18IdentifiableObjectC", "Canvas"]
 - !private ["6Scenes18IdentifiableObjectC", "Color"]
@@ -100,11 +114,19 @@ depends-member:
 - ["6Scenes18IdentifiableObjectC", "render"]
 - ["6Scenes18IdentifiableObjectC", "setup"]
 - ["6Scenes18IdentifiableObjectC", "textFillStyle"]
+- ["6Scenes18IdentifiableObjectC", "title1"]
+- ["6Scenes18IdentifiableObjectC", "title1FillStyle"]
+- ["6Scenes18IdentifiableObjectC", "title2"]
+- ["6Scenes18IdentifiableObjectC", "title2FillStyle"]
 - !private ["4Igis9LineWidthC", "init"]
+- !private ["4Igis5ColorC4NameO", "blue"]
+- !private ["4Igis5ColorC4NameO", "red"]
 - !private ["4Igis5ColorC4NameO", "white"]
 - !private ["4Igis5PointV", "init"]
 - !private ["4Igis5PointV", "x"]
 - !private ["4Igis5PointV", "y"]
+- !private ["SY", "blue"]
+- !private ["SY", "red"]
 - !private ["SY", "white"]
 - !private ["4Igis4RectV", "topLeft"]
 - !private ["4Igis9RectangleC", "rect"]
@@ -131,6 +153,10 @@ depends-member:
 - ["6Scenes16RenderableEntityC", "render"]
 - ["6Scenes16RenderableEntityC", "setup"]
 - ["6Scenes16RenderableEntityC", "textFillStyle"]
+- ["6Scenes16RenderableEntityC", "title1"]
+- ["6Scenes16RenderableEntityC", "title1FillStyle"]
+- ["6Scenes16RenderableEntityC", "title2"]
+- ["6Scenes16RenderableEntityC", "title2FillStyle"]
 - ["6Simple10ScoreboardC", "Canvas"]
 - !private ["6Simple10ScoreboardC", "Color"]
 - ["6Simple10ScoreboardC", "Field"]
@@ -154,6 +180,10 @@ depends-member:
 - ["6Simple10ScoreboardC", "render"]
 - ["6Simple10ScoreboardC", "setup"]
 - ["6Simple10ScoreboardC", "textFillStyle"]
+- ["6Simple10ScoreboardC", "title1"]
+- ["6Simple10ScoreboardC", "title1FillStyle"]
+- ["6Simple10ScoreboardC", "title2"]
+- ["6Simple10ScoreboardC", "title2FillStyle"]
 - !private ["4Igis4SizeV", "center"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
@@ -217,4 +247,4 @@ depends-external:
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOHTTPParser.build/module.modulemap"
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOAtomics.build/module.modulemap"
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOLinux.build/module.modulemap"
-interface-hash: "687c5542b157cc8ed643456e719e4e38"
+interface-hash: "14f7d076b1745d3f26235d24bb4aeacb"
