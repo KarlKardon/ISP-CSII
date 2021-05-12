@@ -15,6 +15,8 @@ class InteractionLayer : Layer, KeyDownHandler {
     static let player2 = Player(teamJerseyColor : FillStyle(color:Color(.red)), isMerlin: false)
     static let field = Field()
     static let ball = Ball()
+    static var player1Score = 0 
+    static var player2Score = 0
 
     enum kickType {
         case up
@@ -44,7 +46,10 @@ class InteractionLayer : Layer, KeyDownHandler {
     }
 
     override func preSetup(canvasSize: Size, canvas: Canvas) {
-       
+
+        scoreboard.player1Score = Self.player1Score
+        scoreboard.player2Score = Self.player2Score
+        
         Self.ball.velocity.x = Self.ball.velocity.x/2
         Self.ball.velocity.y = Self.ball.velocity.y/2
         Self.player1.changeVelocity(velocityX:30, velocityY:30)
@@ -157,17 +162,20 @@ class InteractionLayer : Layer, KeyDownHandler {
         //////////////////
         //Increasing score
         //////////////////
+        scoreboard.player1Score = Self.player1Score
+        scoreboard.player2Score = Self.player2Score
+        
         
         if ballGoal1Containment.contains(.contact) {
-            scoreboard.increasePlayer2Score()
+            Self.player2Score += 1
             Self.ball.move(to: Self.field.fieldCircle.center)
-            Self.ball.velocity.x = 20
+            Self.ball.velocity.x = Self.ball.targetXVelocity
         }
 
         if ballGoal2Containment.contains(.contact){
-            scoreboard.increasePlayer1Score()
+            Self.player1Score += 1
             Self.ball.move(to: Self.field.fieldCircle.center)
-            Self.ball.velocity.x = -20
+            Self.ball.velocity.x = -Self.ball.targetXVelocity
         }
 
         ////////////////////////
