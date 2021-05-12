@@ -6,17 +6,25 @@ import Foundation
 
 class Player : RenderableEntity {
 
+    //Jersey
     let jersey : Rectangle
     let jerseyColor : FillStyle
+    var jerseyRect : Rect
+    
+    //Head
     let head : Rectangle
     let headColor : FillStyle
-    var jerseyRect : Rect
     var headRect : Rect
+
+    //Velocity
     var velocity : Point
+
+    //THE HOLY MERLIN BEARD
     let beard : Rectangle
     let beardRect : Rect
     let beardColor : FillStyle
-  //  let hat = Path(fillMode: .fill)
+
+    //Determines if player is merlin or not
     let isMerlinDeterminator : Bool
     
     init(teamJerseyColor: FillStyle, isMerlin: Bool) {
@@ -45,26 +53,20 @@ class Player : RenderableEntity {
         }
     }
 
-    override func setup(canvasSize:Size, canvas:Canvas) {
-    
-    }
-
-    override func teardown() {
-    }
-
-    
+    //Moves the player to wherever specified
     func move(to point:Point) {
         jersey.rect.topLeft = Point(x:point.x, y: point.y + 25)
         head.rect.topLeft = point
         beard.rect.topLeft = Point(x:point.x + 20, y: point.y + 25)
     }
-    
+
+    //Changes player movement speed
     public func changeVelocity(velocityX:Int, velocityY:Int) {
         self.velocity.x = velocityX
         self.velocity.y = velocityY
     }
 
-
+    //Player movements
     func moveRight() {
         jersey.rect.topLeft.x += velocity.x
         head.rect.topLeft.x += velocity.x
@@ -89,13 +91,9 @@ class Player : RenderableEntity {
         beard.rect.topLeft.y += velocity.y
     }
 
+    //bounding rect for player
     override func boundingRect() -> Rect {
         return Rect(topLeft: head.rect.topLeft, size: Size(width: jersey.rect.size.width, height: head.rect.size.height + jersey.rect.size.height))
-    }
-
-    override func calculate(canvasSize:Size) {
-        
-    }
-    
+    } 
     
 }

@@ -20,6 +20,7 @@ class Ball : RenderableEntity {
         ellipse.center = InteractionLayer.field.fieldCircle.center
     }
 
+    //bounding rect for containment
     override func boundingRect() -> Rect {
         let left = ellipse.center.x - ellipse.radiusX
         let top = ellipse.center.y - ellipse.radiusY
@@ -30,6 +31,7 @@ class Ball : RenderableEntity {
         return Rect(topLeft:Point(x: left, y: top), size:Size(width:width, height:height)) 
     }
 
+    //calculates ball physics and movement
     override func calculate(canvasSize: Size) {
         //move ball
         ellipse.center += velocity

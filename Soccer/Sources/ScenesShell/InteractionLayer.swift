@@ -9,21 +9,31 @@ import Igis
 
 class InteractionLayer : Layer, KeyDownHandler {
 
-    
+    //Scoreboard
     let scoreboard = Scoreboard()
+
+    //Players
     static let player1 = Player(teamJerseyColor : FillStyle(color:Color(.blue)), isMerlin: true)
     static let player2 = Player(teamJerseyColor : FillStyle(color:Color(.red)), isMerlin: false)
+
+    //Field
     static let field = Field()
+
+    //Ball
     static let ball = Ball()
+
+    //These vars follow the score for both players accurately
     static var player1Score = 0 
     static var player2Score = 0
 
+    //Different types of kicks the player can conduct
     enum kickType {
         case up
         case down
         case straight
     }
 
+    //Default kickdirections
     static var player1KickDirection = kickType.straight
     static var player2KickDirection = kickType.straight
     
@@ -47,16 +57,17 @@ class InteractionLayer : Layer, KeyDownHandler {
 
     override func preSetup(canvasSize: Size, canvas: Canvas) {
 
+        //Making the score depend on the static vars
         scoreboard.player1Score = Self.player1Score
         scoreboard.player2Score = Self.player2Score
-        
+
+        //Initial velocities
         Self.ball.velocity.x = Self.ball.velocity.x/2
         Self.ball.velocity.y = Self.ball.velocity.y/2
         Self.player1.changeVelocity(velocityX:30, velocityY:30)
         Self.player2.changeVelocity(velocityX:30, velocityY:30)
         
         //Moving players to starting positions
-        
         Self.player1.move(to: Point(x: canvasSize.center.x - 200, y: canvasSize.center.y))
         Self.player2.move(to: Point(x: canvasSize.center.x + 200, y: canvasSize.center.y))
         
@@ -65,6 +76,7 @@ class InteractionLayer : Layer, KeyDownHandler {
     }
 
     override func postTeardown() {
+        //Keydownhandler business
         dispatcher.unregisterKeyDownHandler(handler: self)
     }
 

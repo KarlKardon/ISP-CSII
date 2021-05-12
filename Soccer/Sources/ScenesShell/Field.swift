@@ -37,6 +37,7 @@ class Field: RenderableEntity {
         goalBox2 = Rectangle(rect:goalBox2Rect, fillMode: .stroke)
     }
 
+    //bounding rect for goal box for containment
     func goalBoxBoundingRect(goalBox: Rect) -> Rect {
         return Rect(topLeft:Point(x:goalBox.topLeft.x, y: goalBox.topLeft.y), size:Size(width:goalBox.size.width, height:goalBox.size.height))
     }

@@ -7,7 +7,7 @@ import Igis
 
 
 class Background : RenderableEntity {
-    // hi
+    //Grass
     let grass : Rectangle
     let grassRect : Rect
     let grassColor : FillStyle
