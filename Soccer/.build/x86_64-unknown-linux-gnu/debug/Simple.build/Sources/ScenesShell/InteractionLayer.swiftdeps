@@ -6,11 +6,15 @@ provides-nominal:
 provides-member:
 - ["6Simple16InteractionLayerC", ""]
 depends-top-level:
+- !private "!"
 - !private "&&"
 - !private "*="
 - !private "+"
 - !private "-"
+- !private "<="
 - !private "=="
+- !private ">"
+- !private ">="
 - "Ball"
 - "Bool"
 - "Canvas"
@@ -32,16 +36,23 @@ depends-top-level:
 - !private "dispatcher"
 - !private "insert"
 - !private "print"
+- !private "||"
 depends-member:
 - !private ["6Simple4BallC", "boundingRect"]
 - !private ["6Simple4BallC", "changeVelocity"]
+- !private ["6Simple4BallC", "ellipse"]
 - ["6Simple4BallC", "init"]
+- !private ["6Simple4BallC", "move"]
 - !private ["6Simple4BallC", "velocity"]
 - ["4Igis12CanvasObjectC", ""]
+- !private ["4Igis12CanvasObjectC", "center"]
+- !private ["4Igis12CanvasObjectC", "radiusX"]
+- !private ["4Igis12CanvasObjectC", "rect"]
 - ["s12CaseIterableP", "blue"]
 - ["s12CaseIterableP", "red"]
 - !private ["Sl", "contains"]
 - ["4Igis5ColorC", "init"]
+- !private ["4Igis11ContainmentO", "contact"]
 - !private ["4Igis11ContainmentO", "overlapsBottom"]
 - !private ["4Igis11ContainmentO", "overlapsLeft"]
 - !private ["4Igis11ContainmentO", "overlapsRight"]
@@ -56,6 +67,8 @@ depends-member:
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["6Scenes10DispatcherC", "registerKeyDownHandler"]
 - !private ["6Scenes10DispatcherC", "unregisterKeyDownHandler"]
+- !private ["4Igis7EllipseC", "center"]
+- !private ["4Igis7EllipseC", "radiusX"]
 - !private ["SE", "contains"]
 - ["SQ", "Ball"]
 - ["SQ", "Color"]
@@ -70,12 +83,20 @@ depends-member:
 - !private ["SQ", "boundingRect"]
 - !private ["SQ", "center"]
 - !private ["SQ", "changeVelocity"]
+- !private ["SQ", "contact"]
 - !private ["SQ", "containment"]
 - !private ["SQ", "contains"]
 - !private ["SQ", "dispatcher"]
+- !private ["SQ", "ellipse"]
 - !private ["SQ", "field"]
+- !private ["SQ", "goalBox1"]
+- !private ["SQ", "goalBox2"]
+- !private ["SQ", "goalBoxBoundingRect"]
+- !private ["SQ", "head"]
+- !private ["SQ", "height"]
 - ["SQ", "init"]
 - !private ["SQ", "insert"]
+- !private ["SQ", "jersey"]
 - !private ["SQ", "move"]
 - !private ["SQ", "moveDown"]
 - !private ["SQ", "moveLeft"]
@@ -94,7 +115,10 @@ depends-member:
 - !private ["SQ", "preSetup"]
 - !private ["SQ", "print"]
 - ["SQ", "red"]
+- !private ["SQ", "size"]
+- !private ["SQ", "topLeft"]
 - !private ["SQ", "velocity"]
+- !private ["SQ", "width"]
 - !private ["SQ", "x"]
 - !private ["SQ", "y"]
 - ["6Scenes12EventHandlerP", "Ball"]
@@ -121,9 +145,14 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "contains"]
 - !private ["s32ExpressibleByStringInterpolationP", "StringInterpolation"]
 - !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["6Simple5FieldC", "field"]
+- !private ["6Simple5FieldC", "goalBox1"]
+- !private ["6Simple5FieldC", "goalBox2"]
+- !private ["6Simple5FieldC", "goalBoxBoundingRect"]
 - ["6Simple5FieldC", "init"]
 - ["4Igis9FillStyleC", "init"]
 - ["SH", "blue"]
+- !private ["SH", "contact"]
 - !private ["SH", "contains"]
 - !private ["SH", "overlapsBottom"]
 - !private ["SH", "overlapsLeft"]
@@ -146,9 +175,15 @@ depends-member:
 - !private ["6Scenes18IdentifiableObjectC", "boundingRect"]
 - !private ["6Scenes18IdentifiableObjectC", "changeVelocity"]
 - !private ["6Scenes18IdentifiableObjectC", "dispatcher"]
+- !private ["6Scenes18IdentifiableObjectC", "ellipse"]
 - ["6Scenes18IdentifiableObjectC", "field"]
+- !private ["6Scenes18IdentifiableObjectC", "goalBox1"]
+- !private ["6Scenes18IdentifiableObjectC", "goalBox2"]
+- !private ["6Scenes18IdentifiableObjectC", "goalBoxBoundingRect"]
+- !private ["6Scenes18IdentifiableObjectC", "head"]
 - ["6Scenes18IdentifiableObjectC", "init"]
 - !private ["6Scenes18IdentifiableObjectC", "insert"]
+- !private ["6Scenes18IdentifiableObjectC", "jersey"]
 - !private ["6Scenes18IdentifiableObjectC", "move"]
 - !private ["6Scenes18IdentifiableObjectC", "moveDown"]
 - !private ["6Scenes18IdentifiableObjectC", "moveLeft"]
@@ -238,7 +273,9 @@ depends-member:
 - ["4Igis5ColorC4NameO", "red"]
 - !private ["6Simple6PlayerC", "boundingRect"]
 - !private ["6Simple6PlayerC", "changeVelocity"]
+- !private ["6Simple6PlayerC", "head"]
 - ["6Simple6PlayerC", "init"]
+- !private ["6Simple6PlayerC", "jersey"]
 - !private ["6Simple6PlayerC", "move"]
 - !private ["6Simple6PlayerC", "moveDown"]
 - !private ["6Simple6PlayerC", "moveLeft"]
@@ -250,9 +287,19 @@ depends-member:
 - ["SY", "blue"]
 - ["SY", "red"]
 - !private ["4Igis4RectV", "containment"]
+- !private ["4Igis4RectV", "size"]
+- !private ["4Igis4RectV", "topLeft"]
+- !private ["4Igis9RectangleC", "rect"]
 - ["6Scenes16RenderableEntityC", ""]
 - !private ["6Scenes16RenderableEntityC", "boundingRect"]
 - !private ["6Scenes16RenderableEntityC", "changeVelocity"]
+- !private ["6Scenes16RenderableEntityC", "ellipse"]
+- !private ["6Scenes16RenderableEntityC", "field"]
+- !private ["6Scenes16RenderableEntityC", "goalBox1"]
+- !private ["6Scenes16RenderableEntityC", "goalBox2"]
+- !private ["6Scenes16RenderableEntityC", "goalBoxBoundingRect"]
+- !private ["6Scenes16RenderableEntityC", "head"]
+- !private ["6Scenes16RenderableEntityC", "jersey"]
 - !private ["6Scenes16RenderableEntityC", "move"]
 - !private ["6Scenes16RenderableEntityC", "moveDown"]
 - !private ["6Scenes16RenderableEntityC", "moveLeft"]
@@ -264,6 +311,8 @@ depends-member:
 - !private ["Sh", "contains"]
 - !private ["s10SetAlgebraP", "contains"]
 - !private ["4Igis4SizeV", "center"]
+- !private ["4Igis4SizeV", "height"]
+- !private ["4Igis4SizeV", "width"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["s27StringInterpolationProtocolP", "init"]
@@ -289,6 +338,7 @@ depends-nominal:
 - !private "Se"
 - !private "s26DefaultStringInterpolationV"
 - !private "6Scenes10DispatcherC"
+- !private "4Igis7EllipseC"
 - !private "SE"
 - "SQ"
 - "6Scenes12EventHandlerP"
@@ -306,6 +356,7 @@ depends-nominal:
 - !private "4Igis5PointV"
 - "SY"
 - !private "4Igis4RectV"
+- !private "4Igis9RectangleC"
 - "6Scenes16RenderableEntityC"
 - !private "ST"
 - !private "Sh"

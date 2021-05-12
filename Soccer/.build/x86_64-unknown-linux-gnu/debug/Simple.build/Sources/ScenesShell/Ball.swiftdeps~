@@ -51,6 +51,7 @@ depends-member:
 - ["6Simple4BallC", "ellipse"]
 - ["6Simple4BallC", "fillStyle"]
 - ["6Simple4BallC", "init"]
+- ["6Simple4BallC", "move"]
 - ["6Simple4BallC", "render"]
 - ["6Simple4BallC", "setup"]
 - ["6Simple4BallC", "strokeStyle"]
@@ -89,6 +90,7 @@ depends-member:
 - !private ["SQ", "fillStyle"]
 - !private ["SQ", "height"]
 - ["SQ", "init"]
+- !private ["SQ", "move"]
 - !private ["SQ", "render"]
 - !private ["SQ", "setup"]
 - !private ["SQ", "size"]
@@ -128,6 +130,7 @@ depends-member:
 - !private ["6Scenes18IdentifiableObjectC", "fieldCircle"]
 - ["6Scenes18IdentifiableObjectC", "fillStyle"]
 - ["6Scenes18IdentifiableObjectC", "init"]
+- ["6Scenes18IdentifiableObjectC", "move"]
 - ["6Scenes18IdentifiableObjectC", "render"]
 - ["6Scenes18IdentifiableObjectC", "setup"]
 - ["6Scenes18IdentifiableObjectC", "strokeStyle"]
@@ -167,6 +170,7 @@ depends-member:
 - !private ["6Scenes16RenderableEntityC", "fieldCircle"]
 - ["6Scenes16RenderableEntityC", "fillStyle"]
 - ["6Scenes16RenderableEntityC", "init"]
+- ["6Scenes16RenderableEntityC", "move"]
 - ["6Scenes16RenderableEntityC", "render"]
 - ["6Scenes16RenderableEntityC", "setup"]
 - ["6Scenes16RenderableEntityC", "strokeStyle"]
@@ -239,4 +243,4 @@ depends-external:
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOHTTPParser.build/module.modulemap"
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOAtomics.build/module.modulemap"
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOLinux.build/module.modulemap"
-interface-hash: "dce6b6a743814603b26736c7069295fb"
+interface-hash: "885f6ec93bd5192c292aee065a3a9c3a"

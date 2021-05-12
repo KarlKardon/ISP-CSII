@@ -35,6 +35,10 @@ class Field: RenderableEntity {
         goalBox2 = Rectangle(rect:goalBox2Rect, fillMode: .stroke)
     }
 
+    func goalBoxBoundingRect(goalBox: Rect) -> Rect {
+        return Rect(topLeft:Point(x:goalBox.topLeft.x, y: goalBox.topLeft.y), size:Size(width:goalBox.size.width, height:goalBox.size.height))
+    }
+
     override func setup(canvasSize:Size, canvas: Canvas) {
 
         //field dimensions

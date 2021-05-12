@@ -56,6 +56,11 @@ class Ball : RenderableEntity {
             velocity.y = -velocity.y
         }
     }
+
+    func move(to point:Point) {
+        ellipse.center = point
+    }
+
     
     override func render(canvas:Canvas) {
         canvas.render(strokeStyle, fillStyle, ellipse)
