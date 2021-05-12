@@ -7,8 +7,8 @@ class Ball : RenderableEntity {
     let strokeStyle = StrokeStyle(color:Color(.black))
     let fillStyle = FillStyle(color:Color(.white))
     var velocity : Point
-    let targetXVelocity = 20
-    let targetYVelocity = 10
+    let targetXVelocity = 10
+    let targetYVelocity = 5
     let lineWidth = LineWidth(width:3)
     init () {
         velocity = Point(x:0, y:0)

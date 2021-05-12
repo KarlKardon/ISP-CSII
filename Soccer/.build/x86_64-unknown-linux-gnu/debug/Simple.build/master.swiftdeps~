@@ -1,6 +1,6 @@
 version: "Swift version 5.3.2 (swift-5.3.2-RELEASE)"
 options: "5e2c956f003ca8a3562d3abfc7f664aa"
-build_time: [1620801825, 898214015]
+build_time: [1620803279, 451848533]
 inputs:
   "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/Background.swift": [1620410776, 429736479]
   "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/BackgroundLayer.swift": [1618369301, 672584687]
@@ -9,7 +9,7 @@ inputs:
   "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/Cookies.swift": [1618371378, 252950949]
   "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/Field.swift": [1620790774, 642600810]
   "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/ForegroundLayer.swift": [1618191877, 523308893]
-  "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/InteractionLayer.swift": [1620801823, 488033546]
+  "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/InteractionLayer.swift": [1620803277, 808768072]
   "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/MainScene.swift": [1618191877, 527308717]
   "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/Painter.swift": [1620800321, 537200636]
   "/home/collin-cunningham/Journals/CSII-ISP/ISP-CSII/Soccer/Sources/ScenesShell/Player.swift": [1620714191, 835749052]
