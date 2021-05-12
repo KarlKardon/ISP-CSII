@@ -3,19 +3,18 @@ import Igis
 import Foundation
 
 class Ball : RenderableEntity {
-    var ellipse = Ellipse(center:Point(x:0, y:0), radiusX:10, radiusY:10, fillMode:.fillAndStroke)
+    var ellipse = Ellipse(center:Point(x:0, y:0), radiusX:15, radiusY:15, fillMode:.fillAndStroke)
     let strokeStyle = StrokeStyle(color:Color(.black))
     let fillStyle = FillStyle(color:Color(.white))
-    var velocity : Point 
+    var velocity : Point
+    let targetXVelocity = 20
+    let targetYVelocity = 10
+    let lineWidth = LineWidth(width:3)
     init () {
         velocity = Point(x:0, y:0)
     }
 
-    public func changeVelocity(velocityX:Int, velocityY:Int) {
-        self.velocity.x = velocityX
-        self.velocity.y = velocityY
-    }
-
+    
     override func setup(canvasSize: Size, canvas: Canvas) {
         // Position the ellipse at the center of the canvas
         ellipse.center = InteractionLayer.field.fieldCircle.center
@@ -55,6 +54,22 @@ class Ball : RenderableEntity {
         if tooFarUp || tooFarDown {
             velocity.y = -velocity.y
         }
+
+        if velocity.x < 0 {
+            while velocity.x < -targetXVelocity {
+                velocity.x += 1
+            }
+        } else {
+            if velocity.x > 0 {
+                while velocity.x > targetXVelocity {
+                    velocity.x -= 1
+                }
+            }
+        }
+
+        if velocity.x > targetXVelocity * 2 || velocity.x < targetXVelocity * -2{
+            velocity.x = targetXVelocity
+        }
     }
 
     func move(to point:Point) {
@@ -63,6 +78,6 @@ class Ball : RenderableEntity {
 
     
     override func render(canvas:Canvas) {
-        canvas.render(strokeStyle, fillStyle, ellipse)
+        canvas.render(lineWidth, strokeStyle, fillStyle, ellipse)
     }
 }

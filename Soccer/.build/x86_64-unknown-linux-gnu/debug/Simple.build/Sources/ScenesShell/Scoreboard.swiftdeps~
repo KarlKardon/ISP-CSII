@@ -1,0 +1,220 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Scoreboard"
+provides-nominal:
+- "6Simple10ScoreboardC"
+provides-member:
+- ["6Simple10ScoreboardC", ""]
+depends-top-level:
+- !private "+"
+- !private "+="
+- !private "-"
+- "AssignmentPrecedence"
+- "Canvas"
+- !private "Color"
+- "Field"
+- "FillStyle"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "LineWidth"
+- !private "Point"
+- "RenderableEntity"
+- "Scoreboard"
+- "Size"
+- !private "StringLiteralType"
+- "Text"
+- !private "field"
+- !private "lineWidth"
+- !private "player1Score"
+- !private "player1ScoreText"
+- !private "player2Score"
+- !private "player2ScoreText"
+- !private "textFillStyle"
+depends-member:
+- !private ["4Igis6CanvasC", "render"]
+- ["4Igis12CanvasObjectC", ""]
+- !private ["4Igis12CanvasObjectC", "font"]
+- !private ["4Igis12CanvasObjectC", "rect"]
+- !private ["4Igis12CanvasObjectC", "text"]
+- !private ["s12CaseIterableP", "white"]
+- !private ["4Igis5ColorC", "init"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SQ", "Color"]
+- !private ["SQ", "Field"]
+- !private ["SQ", "FillStyle"]
+- !private ["SQ", "LineWidth"]
+- !private ["SQ", "Point"]
+- !private ["SQ", "Text"]
+- ["SQ", ""]
+- !private ["SQ", "calculate"]
+- !private ["SQ", "center"]
+- !private ["SQ", "field"]
+- !private ["SQ", "fill"]
+- !private ["SQ", "increasePlayer1Score"]
+- !private ["SQ", "increasePlayer2Score"]
+- !private ["SQ", "init"]
+- !private ["SQ", "lineWidth"]
+- !private ["SQ", "player1Score"]
+- !private ["SQ", "player1ScoreText"]
+- !private ["SQ", "player2Score"]
+- !private ["SQ", "player2ScoreText"]
+- !private ["SQ", "render"]
+- !private ["SQ", "setup"]
+- !private ["SQ", "textFillStyle"]
+- !private ["SQ", "topLeft"]
+- !private ["SQ", "white"]
+- !private ["SQ", "x"]
+- !private ["SQ", "y"]
+- !private ["s32ExpressibleByStringInterpolationP", "StringInterpolation"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["6Simple5FieldC", "field"]
+- !private ["6Simple5FieldC", "init"]
+- !private ["4Igis8FillModeO", "fill"]
+- !private ["4Igis9FillStyleC", "init"]
+- !private ["SH", "fill"]
+- !private ["SH", "white"]
+- ["6Scenes18IdentifiableObjectC", "Canvas"]
+- !private ["6Scenes18IdentifiableObjectC", "Color"]
+- ["6Scenes18IdentifiableObjectC", "Field"]
+- ["6Scenes18IdentifiableObjectC", "FillStyle"]
+- ["6Scenes18IdentifiableObjectC", "Int"]
+- ["6Scenes18IdentifiableObjectC", "LineWidth"]
+- !private ["6Scenes18IdentifiableObjectC", "Point"]
+- ["6Scenes18IdentifiableObjectC", "Size"]
+- ["6Scenes18IdentifiableObjectC", "Text"]
+- ["6Scenes18IdentifiableObjectC", ""]
+- ["6Scenes18IdentifiableObjectC", "calculate"]
+- ["6Scenes18IdentifiableObjectC", "field"]
+- ["6Scenes18IdentifiableObjectC", "increasePlayer1Score"]
+- ["6Scenes18IdentifiableObjectC", "increasePlayer2Score"]
+- ["6Scenes18IdentifiableObjectC", "init"]
+- ["6Scenes18IdentifiableObjectC", "lineWidth"]
+- ["6Scenes18IdentifiableObjectC", "player1Score"]
+- ["6Scenes18IdentifiableObjectC", "player1ScoreText"]
+- ["6Scenes18IdentifiableObjectC", "player2Score"]
+- ["6Scenes18IdentifiableObjectC", "player2ScoreText"]
+- ["6Scenes18IdentifiableObjectC", "render"]
+- ["6Scenes18IdentifiableObjectC", "setup"]
+- ["6Scenes18IdentifiableObjectC", "textFillStyle"]
+- !private ["4Igis9LineWidthC", "init"]
+- !private ["4Igis5ColorC4NameO", "white"]
+- !private ["4Igis5PointV", "init"]
+- !private ["4Igis5PointV", "x"]
+- !private ["4Igis5PointV", "y"]
+- !private ["SY", "white"]
+- !private ["4Igis4RectV", "topLeft"]
+- !private ["4Igis9RectangleC", "rect"]
+- ["6Scenes16RenderableEntityC", "Canvas"]
+- !private ["6Scenes16RenderableEntityC", "Color"]
+- ["6Scenes16RenderableEntityC", "Field"]
+- ["6Scenes16RenderableEntityC", "FillStyle"]
+- ["6Scenes16RenderableEntityC", "Int"]
+- ["6Scenes16RenderableEntityC", "LineWidth"]
+- !private ["6Scenes16RenderableEntityC", "Point"]
+- ["6Scenes16RenderableEntityC", "Size"]
+- ["6Scenes16RenderableEntityC", "Text"]
+- ["6Scenes16RenderableEntityC", ""]
+- ["6Scenes16RenderableEntityC", "calculate"]
+- ["6Scenes16RenderableEntityC", "field"]
+- ["6Scenes16RenderableEntityC", "increasePlayer1Score"]
+- ["6Scenes16RenderableEntityC", "increasePlayer2Score"]
+- ["6Scenes16RenderableEntityC", "init"]
+- ["6Scenes16RenderableEntityC", "lineWidth"]
+- ["6Scenes16RenderableEntityC", "player1Score"]
+- ["6Scenes16RenderableEntityC", "player1ScoreText"]
+- ["6Scenes16RenderableEntityC", "player2Score"]
+- ["6Scenes16RenderableEntityC", "player2ScoreText"]
+- ["6Scenes16RenderableEntityC", "render"]
+- ["6Scenes16RenderableEntityC", "setup"]
+- ["6Scenes16RenderableEntityC", "textFillStyle"]
+- ["6Simple10ScoreboardC", "Canvas"]
+- !private ["6Simple10ScoreboardC", "Color"]
+- ["6Simple10ScoreboardC", "Field"]
+- ["6Simple10ScoreboardC", "FillStyle"]
+- ["6Simple10ScoreboardC", "Int"]
+- ["6Simple10ScoreboardC", "LineWidth"]
+- !private ["6Simple10ScoreboardC", "Point"]
+- ["6Simple10ScoreboardC", "Size"]
+- ["6Simple10ScoreboardC", "Text"]
+- ["6Simple10ScoreboardC", "calculate"]
+- ["6Simple10ScoreboardC", "deinit"]
+- ["6Simple10ScoreboardC", "field"]
+- ["6Simple10ScoreboardC", "increasePlayer1Score"]
+- ["6Simple10ScoreboardC", "increasePlayer2Score"]
+- ["6Simple10ScoreboardC", "init"]
+- ["6Simple10ScoreboardC", "lineWidth"]
+- ["6Simple10ScoreboardC", "player1Score"]
+- ["6Simple10ScoreboardC", "player1ScoreText"]
+- ["6Simple10ScoreboardC", "player2Score"]
+- ["6Simple10ScoreboardC", "player2ScoreText"]
+- ["6Simple10ScoreboardC", "render"]
+- ["6Simple10ScoreboardC", "setup"]
+- ["6Simple10ScoreboardC", "textFillStyle"]
+- !private ["4Igis4SizeV", "center"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s27StringInterpolationProtocolP", "init"]
+- !private ["4Igis4TextC", "font"]
+- !private ["4Igis4TextC", "init"]
+- !private ["4Igis4TextC", "text"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+depends-nominal:
+- !private "4Igis6CanvasC"
+- "4Igis12CanvasObjectC"
+- !private "s12CaseIterableP"
+- !private "4Igis5ColorC"
+- !private "s23CustomStringConvertibleP"
+- !private "s26DefaultStringInterpolationV"
+- "SQ"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "6Simple5FieldC"
+- !private "4Igis8FillModeO"
+- !private "4Igis9FillStyleC"
+- !private "SH"
+- "6Scenes18IdentifiableObjectC"
+- !private "4Igis9LineWidthC"
+- !private "4Igis5ColorC4NameO"
+- !private "4Igis5PointV"
+- !private "SY"
+- !private "4Igis4RectV"
+- !private "4Igis9RectangleC"
+- "6Scenes16RenderableEntityC"
+- "6Simple10ScoreboardC"
+- !private "4Igis4SizeV"
+- !private "s27StringInterpolationProtocolP"
+- !private "4Igis4TextC"
+- !private "s16TextOutputStreamP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+depends-dynamic-lookup:
+depends-external:
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOHTTP1.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIO.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/local/lib/merlin/Scenes-1.1.5/Scenes/.build/debug/Scenes.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/Igis.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOConcurrencyHelpers.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOWebSocket.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOSHA1/include/CNIOSHA1.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOHTTPParser/include/CNIOHTTPParser.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOHTTPParser/include/c_nio_http_parser.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOAtomics/include/CNIOAtomics.h"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/checkouts/swift-nio/Sources/CNIOLinux/include/CNIOLinux.h"
+- "/opt/swift-5.3.2-RELEASE-ubuntu20.04/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOSHA1.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIODarwin.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOHTTPParser.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOAtomics.build/module.modulemap"
+- "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOLinux.build/module.modulemap"
+interface-hash: "687c5542b157cc8ed643456e719e4e38"

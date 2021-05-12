@@ -10,6 +10,7 @@ depends-top-level:
 - !private "+"
 - !private "+="
 - !private "-"
+- !private "-="
 - !private "<"
 - !private ">"
 - "AssignmentPrecedence"
@@ -19,9 +20,9 @@ depends-top-level:
 - "Ellipse"
 - "FillStyle"
 - "FloatLiteralType"
-- "Int"
 - "IntegerLiteralType"
 - !private "InteractionLayer"
+- "LineWidth"
 - "Point"
 - "Rect"
 - "RenderableEntity"
@@ -29,7 +30,9 @@ depends-top-level:
 - "StrokeStyle"
 - !private "ellipse"
 - !private "fillStyle"
+- !private "lineWidth"
 - !private "strokeStyle"
+- !private "targetXVelocity"
 - !private "velocity"
 - !private "||"
 depends-member:
@@ -38,23 +41,25 @@ depends-member:
 - ["6Simple4BallC", "Color"]
 - ["6Simple4BallC", "Ellipse"]
 - ["6Simple4BallC", "FillStyle"]
-- ["6Simple4BallC", "Int"]
 - !private ["6Simple4BallC", "InteractionLayer"]
+- ["6Simple4BallC", "LineWidth"]
 - ["6Simple4BallC", "Point"]
 - ["6Simple4BallC", "Rect"]
 - ["6Simple4BallC", "Size"]
 - ["6Simple4BallC", "StrokeStyle"]
 - ["6Simple4BallC", "boundingRect"]
 - ["6Simple4BallC", "calculate"]
-- ["6Simple4BallC", "changeVelocity"]
 - ["6Simple4BallC", "deinit"]
 - ["6Simple4BallC", "ellipse"]
 - ["6Simple4BallC", "fillStyle"]
 - ["6Simple4BallC", "init"]
+- ["6Simple4BallC", "lineWidth"]
 - ["6Simple4BallC", "move"]
 - ["6Simple4BallC", "render"]
 - ["6Simple4BallC", "setup"]
 - ["6Simple4BallC", "strokeStyle"]
+- ["6Simple4BallC", "targetXVelocity"]
+- ["6Simple4BallC", "targetYVelocity"]
 - ["6Simple4BallC", "velocity"]
 - !private ["4Igis6CanvasC", "render"]
 - ["4Igis12CanvasObjectC", ""]
@@ -75,6 +80,7 @@ depends-member:
 - ["SQ", "Ellipse"]
 - ["SQ", "FillStyle"]
 - !private ["SQ", "InteractionLayer"]
+- ["SQ", "LineWidth"]
 - ["SQ", "Point"]
 - !private ["SQ", "Rect"]
 - !private ["SQ", "Size"]
@@ -82,7 +88,6 @@ depends-member:
 - ["SQ", ""]
 - ["SQ", "black"]
 - !private ["SQ", "calculate"]
-- !private ["SQ", "changeVelocity"]
 - !private ["SQ", "ellipse"]
 - !private ["SQ", "field"]
 - !private ["SQ", "fieldCircle"]
@@ -90,11 +95,13 @@ depends-member:
 - !private ["SQ", "fillStyle"]
 - !private ["SQ", "height"]
 - ["SQ", "init"]
+- !private ["SQ", "lineWidth"]
 - !private ["SQ", "move"]
 - !private ["SQ", "render"]
 - !private ["SQ", "setup"]
 - !private ["SQ", "size"]
 - !private ["SQ", "strokeStyle"]
+- !private ["SQ", "targetXVelocity"]
 - !private ["SQ", "topLeft"]
 - !private ["SQ", "velocity"]
 - ["SQ", "white"]
@@ -115,8 +122,8 @@ depends-member:
 - ["6Scenes18IdentifiableObjectC", "Color"]
 - ["6Scenes18IdentifiableObjectC", "Ellipse"]
 - ["6Scenes18IdentifiableObjectC", "FillStyle"]
-- ["6Scenes18IdentifiableObjectC", "Int"]
 - !private ["6Scenes18IdentifiableObjectC", "InteractionLayer"]
+- ["6Scenes18IdentifiableObjectC", "LineWidth"]
 - ["6Scenes18IdentifiableObjectC", "Point"]
 - ["6Scenes18IdentifiableObjectC", "Rect"]
 - ["6Scenes18IdentifiableObjectC", "Size"]
@@ -124,21 +131,24 @@ depends-member:
 - ["6Scenes18IdentifiableObjectC", ""]
 - ["6Scenes18IdentifiableObjectC", "boundingRect"]
 - ["6Scenes18IdentifiableObjectC", "calculate"]
-- ["6Scenes18IdentifiableObjectC", "changeVelocity"]
 - ["6Scenes18IdentifiableObjectC", "ellipse"]
 - !private ["6Scenes18IdentifiableObjectC", "field"]
 - !private ["6Scenes18IdentifiableObjectC", "fieldCircle"]
 - ["6Scenes18IdentifiableObjectC", "fillStyle"]
 - ["6Scenes18IdentifiableObjectC", "init"]
+- ["6Scenes18IdentifiableObjectC", "lineWidth"]
 - ["6Scenes18IdentifiableObjectC", "move"]
 - ["6Scenes18IdentifiableObjectC", "render"]
 - ["6Scenes18IdentifiableObjectC", "setup"]
 - ["6Scenes18IdentifiableObjectC", "strokeStyle"]
+- ["6Scenes18IdentifiableObjectC", "targetXVelocity"]
+- ["6Scenes18IdentifiableObjectC", "targetYVelocity"]
 - ["6Scenes18IdentifiableObjectC", "velocity"]
 - !private ["6Simple16InteractionLayerC", "field"]
 - !private ["6Scenes14KeyDownHandlerP", "field"]
 - ["6Scenes5LayerC", ""]
 - !private ["6Scenes5LayerC", "field"]
+- ["4Igis9LineWidthC", "init"]
 - ["4Igis5ColorC4NameO", "black"]
 - ["4Igis5ColorC4NameO", "white"]
 - !private ["Sj", ""]
@@ -155,8 +165,8 @@ depends-member:
 - ["6Scenes16RenderableEntityC", "Color"]
 - ["6Scenes16RenderableEntityC", "Ellipse"]
 - ["6Scenes16RenderableEntityC", "FillStyle"]
-- ["6Scenes16RenderableEntityC", "Int"]
 - !private ["6Scenes16RenderableEntityC", "InteractionLayer"]
+- ["6Scenes16RenderableEntityC", "LineWidth"]
 - ["6Scenes16RenderableEntityC", "Point"]
 - ["6Scenes16RenderableEntityC", "Rect"]
 - ["6Scenes16RenderableEntityC", "Size"]
@@ -164,16 +174,18 @@ depends-member:
 - ["6Scenes16RenderableEntityC", ""]
 - ["6Scenes16RenderableEntityC", "boundingRect"]
 - ["6Scenes16RenderableEntityC", "calculate"]
-- ["6Scenes16RenderableEntityC", "changeVelocity"]
 - ["6Scenes16RenderableEntityC", "ellipse"]
 - !private ["6Scenes16RenderableEntityC", "field"]
 - !private ["6Scenes16RenderableEntityC", "fieldCircle"]
 - ["6Scenes16RenderableEntityC", "fillStyle"]
 - ["6Scenes16RenderableEntityC", "init"]
+- ["6Scenes16RenderableEntityC", "lineWidth"]
 - ["6Scenes16RenderableEntityC", "move"]
 - ["6Scenes16RenderableEntityC", "render"]
 - ["6Scenes16RenderableEntityC", "setup"]
 - ["6Scenes16RenderableEntityC", "strokeStyle"]
+- ["6Scenes16RenderableEntityC", "targetXVelocity"]
+- ["6Scenes16RenderableEntityC", "targetYVelocity"]
 - ["6Scenes16RenderableEntityC", "velocity"]
 - !private ["ST", "_copyContents"]
 - !private ["ST", "_copyToContiguousArray"]
@@ -207,6 +219,7 @@ depends-nominal:
 - !private "6Simple16InteractionLayerC"
 - !private "6Scenes14KeyDownHandlerP"
 - "6Scenes5LayerC"
+- "4Igis9LineWidthC"
 - "4Igis5ColorC4NameO"
 - !private "Sj"
 - "4Igis5PointV"
@@ -243,4 +256,4 @@ depends-external:
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOHTTPParser.build/module.modulemap"
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOAtomics.build/module.modulemap"
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOLinux.build/module.modulemap"
-interface-hash: "885f6ec93bd5192c292aee065a3a9c3a"
+interface-hash: "e6a4193036d80b2c5f25ffb0700d9f3c"

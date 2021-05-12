@@ -47,9 +47,9 @@ class Field: RenderableEntity {
         fieldCircle.center = Point(x:canvasSize.center.x, y:canvasSize.center.y + 50)
 
         //goal dimensions
-        goal1.rect.topLeft = Point(x:field.rect.topLeft.x - 50, y:field.rect.topLeft.y + field.rect.size.center.y - 100)
+        goal1.rect.topLeft = Point(x:field.rect.topLeft.x - 49, y:field.rect.topLeft.y + field.rect.size.center.y - 100)
         goal1.rect.size = Size(width: 50, height: 200)
-        goal2.rect.topLeft = Point(x:field.rect.topLeft.x + field.rect.size.width, y:field.rect.topLeft.y + field.rect.size.center.y - 100)
+        goal2.rect.topLeft = Point(x:field.rect.topLeft.x + field.rect.size.width - 1, y:field.rect.topLeft.y + field.rect.size.center.y - 100)
         goal2.rect.size = Size(width: 50, height: 200)
 
         //goal box dimensions

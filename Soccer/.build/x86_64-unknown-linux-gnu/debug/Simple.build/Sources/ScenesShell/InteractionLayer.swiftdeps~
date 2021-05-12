@@ -3,18 +3,25 @@ provides-top-level:
 - "InteractionLayer"
 provides-nominal:
 - "6Simple16InteractionLayerC"
+- "6Simple16InteractionLayerC8kickTypeO"
 provides-member:
 - ["6Simple16InteractionLayerC", ""]
+- ["6Simple16InteractionLayerC8kickTypeO", ""]
 depends-top-level:
 - !private "!"
+- !private "!="
 - !private "&&"
+- !private "*"
 - !private "*="
 - !private "+"
 - !private "-"
+- !private "/"
+- !private "<"
 - !private "<="
-- !private "=="
+- "=="
 - !private ">"
 - !private ">="
+- "AssignmentPrecedence"
 - "Ball"
 - "Bool"
 - "Canvas"
@@ -28,6 +35,7 @@ depends-top-level:
 - "Layer"
 - "Player"
 - !private "Point"
+- "Scoreboard"
 - !private "Self"
 - "Size"
 - "String"
@@ -35,14 +43,18 @@ depends-top-level:
 - !private "UnicodeScalarType"
 - !private "dispatcher"
 - !private "insert"
+- "kickType"
 - !private "print"
+- !private "scoreboard"
 - !private "||"
 depends-member:
+- !private ["s18AdditiveArithmeticP", ""]
 - !private ["6Simple4BallC", "boundingRect"]
-- !private ["6Simple4BallC", "changeVelocity"]
 - !private ["6Simple4BallC", "ellipse"]
 - ["6Simple4BallC", "init"]
 - !private ["6Simple4BallC", "move"]
+- !private ["6Simple4BallC", "targetXVelocity"]
+- !private ["6Simple4BallC", "targetYVelocity"]
 - !private ["6Simple4BallC", "velocity"]
 - ["4Igis12CanvasObjectC", ""]
 - !private ["4Igis12CanvasObjectC", "center"]
@@ -52,6 +64,7 @@ depends-member:
 - ["s12CaseIterableP", "red"]
 - !private ["Sl", "contains"]
 - ["4Igis5ColorC", "init"]
+- !private ["SL", ""]
 - !private ["4Igis11ContainmentO", "contact"]
 - !private ["4Igis11ContainmentO", "overlapsBottom"]
 - !private ["4Igis11ContainmentO", "overlapsLeft"]
@@ -59,6 +72,7 @@ depends-member:
 - !private ["4Igis11ContainmentO", "overlapsTop"]
 - !private ["s28CustomDebugStringConvertibleP", "contains"]
 - !private ["s17CustomReflectableP", "contains"]
+- !private ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "contains"]
@@ -70,14 +84,17 @@ depends-member:
 - !private ["4Igis7EllipseC", "center"]
 - !private ["4Igis7EllipseC", "radiusX"]
 - !private ["SE", "contains"]
+- ["SQ", "=="]
 - ["SQ", "Ball"]
 - ["SQ", "Color"]
 - ["SQ", "Field"]
 - ["SQ", "FillStyle"]
 - ["SQ", "Player"]
 - !private ["SQ", "Point"]
+- ["SQ", "Scoreboard"]
 - !private ["SQ", "Self"]
 - ["SQ", ""]
+- ["SQ", "_rawHashValue"]
 - !private ["SQ", "ball"]
 - ["SQ", "blue"]
 - !private ["SQ", "boundingRect"]
@@ -87,16 +104,25 @@ depends-member:
 - !private ["SQ", "containment"]
 - !private ["SQ", "contains"]
 - !private ["SQ", "dispatcher"]
+- ["SQ", "down"]
 - !private ["SQ", "ellipse"]
 - !private ["SQ", "field"]
+- !private ["SQ", "fieldCircle"]
+- !private ["SQ", "goal1"]
+- !private ["SQ", "goal2"]
 - !private ["SQ", "goalBox1"]
 - !private ["SQ", "goalBox2"]
 - !private ["SQ", "goalBoxBoundingRect"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
 - !private ["SQ", "head"]
 - !private ["SQ", "height"]
+- !private ["SQ", "increasePlayer1Score"]
+- !private ["SQ", "increasePlayer2Score"]
 - ["SQ", "init"]
 - !private ["SQ", "insert"]
 - !private ["SQ", "jersey"]
+- ["SQ", "kickType"]
 - !private ["SQ", "move"]
 - !private ["SQ", "moveDown"]
 - !private ["SQ", "moveLeft"]
@@ -109,14 +135,21 @@ depends-member:
 - !private ["SQ", "overlapsRight"]
 - !private ["SQ", "overlapsTop"]
 - !private ["SQ", "player1"]
+- !private ["SQ", "player1KickDirection"]
 - !private ["SQ", "player2"]
+- !private ["SQ", "player2KickDirection"]
 - !private ["SQ", "postCalculate"]
 - !private ["SQ", "postTeardown"]
 - !private ["SQ", "preSetup"]
 - !private ["SQ", "print"]
 - ["SQ", "red"]
+- !private ["SQ", "scoreboard"]
 - !private ["SQ", "size"]
+- ["SQ", "straight"]
+- !private ["SQ", "targetXVelocity"]
+- !private ["SQ", "targetYVelocity"]
 - !private ["SQ", "topLeft"]
+- ["SQ", "up"]
 - !private ["SQ", "velocity"]
 - !private ["SQ", "width"]
 - !private ["SQ", "x"]
@@ -127,38 +160,56 @@ depends-member:
 - ["6Scenes12EventHandlerP", "FillStyle"]
 - ["6Scenes12EventHandlerP", "Player"]
 - !private ["6Scenes12EventHandlerP", "Point"]
+- ["6Scenes12EventHandlerP", "Scoreboard"]
 - !private ["6Scenes12EventHandlerP", "Self"]
 - ["6Scenes12EventHandlerP", ""]
 - !private ["6Scenes12EventHandlerP", "ball"]
 - !private ["6Scenes12EventHandlerP", "dispatcher"]
 - !private ["6Scenes12EventHandlerP", "field"]
 - !private ["6Scenes12EventHandlerP", "insert"]
+- ["6Scenes12EventHandlerP", "kickType"]
 - ["6Scenes12EventHandlerP", "name"]
 - ["6Scenes12EventHandlerP", "onKeyDown"]
 - !private ["6Scenes12EventHandlerP", "player1"]
+- !private ["6Scenes12EventHandlerP", "player1KickDirection"]
 - !private ["6Scenes12EventHandlerP", "player2"]
+- !private ["6Scenes12EventHandlerP", "player2KickDirection"]
 - !private ["6Scenes12EventHandlerP", "postCalculate"]
 - !private ["6Scenes12EventHandlerP", "postTeardown"]
 - !private ["6Scenes12EventHandlerP", "preSetup"]
 - !private ["6Scenes12EventHandlerP", "print"]
+- !private ["6Scenes12EventHandlerP", "scoreboard"]
 - !private ["s25ExpressibleByArrayLiteralP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "contains"]
+- !private ["s27ExpressibleByIntegerLiteralP", ""]
 - !private ["s32ExpressibleByStringInterpolationP", "StringInterpolation"]
 - !private ["s32ExpressibleByStringInterpolationP", "init"]
 - !private ["6Simple5FieldC", "field"]
+- !private ["6Simple5FieldC", "fieldCircle"]
+- !private ["6Simple5FieldC", "goal1"]
+- !private ["6Simple5FieldC", "goal2"]
 - !private ["6Simple5FieldC", "goalBox1"]
 - !private ["6Simple5FieldC", "goalBox2"]
 - !private ["6Simple5FieldC", "goalBoxBoundingRect"]
 - ["6Simple5FieldC", "init"]
 - ["4Igis9FillStyleC", "init"]
+- ["SH", "=="]
+- ["SH", ""]
+- ["SH", "_rawHashValue"]
 - ["SH", "blue"]
 - !private ["SH", "contact"]
 - !private ["SH", "contains"]
+- ["SH", "down"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
 - !private ["SH", "overlapsBottom"]
 - !private ["SH", "overlapsLeft"]
 - !private ["SH", "overlapsRight"]
 - !private ["SH", "overlapsTop"]
 - ["SH", "red"]
+- ["SH", "straight"]
+- ["SH", "up"]
+- !private ["s6HasherV", "combine"]
 - ["6Scenes18IdentifiableObjectC", "Ball"]
 - ["6Scenes18IdentifiableObjectC", "Bool"]
 - ["6Scenes18IdentifiableObjectC", "Canvas"]
@@ -167,6 +218,7 @@ depends-member:
 - ["6Scenes18IdentifiableObjectC", "FillStyle"]
 - ["6Scenes18IdentifiableObjectC", "Player"]
 - !private ["6Scenes18IdentifiableObjectC", "Point"]
+- ["6Scenes18IdentifiableObjectC", "Scoreboard"]
 - !private ["6Scenes18IdentifiableObjectC", "Self"]
 - ["6Scenes18IdentifiableObjectC", "Size"]
 - ["6Scenes18IdentifiableObjectC", "String"]
@@ -177,13 +229,19 @@ depends-member:
 - !private ["6Scenes18IdentifiableObjectC", "dispatcher"]
 - !private ["6Scenes18IdentifiableObjectC", "ellipse"]
 - ["6Scenes18IdentifiableObjectC", "field"]
+- !private ["6Scenes18IdentifiableObjectC", "fieldCircle"]
+- !private ["6Scenes18IdentifiableObjectC", "goal1"]
+- !private ["6Scenes18IdentifiableObjectC", "goal2"]
 - !private ["6Scenes18IdentifiableObjectC", "goalBox1"]
 - !private ["6Scenes18IdentifiableObjectC", "goalBox2"]
 - !private ["6Scenes18IdentifiableObjectC", "goalBoxBoundingRect"]
 - !private ["6Scenes18IdentifiableObjectC", "head"]
+- !private ["6Scenes18IdentifiableObjectC", "increasePlayer1Score"]
+- !private ["6Scenes18IdentifiableObjectC", "increasePlayer2Score"]
 - ["6Scenes18IdentifiableObjectC", "init"]
 - !private ["6Scenes18IdentifiableObjectC", "insert"]
 - !private ["6Scenes18IdentifiableObjectC", "jersey"]
+- ["6Scenes18IdentifiableObjectC", "kickType"]
 - !private ["6Scenes18IdentifiableObjectC", "move"]
 - !private ["6Scenes18IdentifiableObjectC", "moveDown"]
 - !private ["6Scenes18IdentifiableObjectC", "moveLeft"]
@@ -192,11 +250,16 @@ depends-member:
 - ["6Scenes18IdentifiableObjectC", "name"]
 - ["6Scenes18IdentifiableObjectC", "onKeyDown"]
 - ["6Scenes18IdentifiableObjectC", "player1"]
+- ["6Scenes18IdentifiableObjectC", "player1KickDirection"]
 - ["6Scenes18IdentifiableObjectC", "player2"]
+- ["6Scenes18IdentifiableObjectC", "player2KickDirection"]
 - ["6Scenes18IdentifiableObjectC", "postCalculate"]
 - ["6Scenes18IdentifiableObjectC", "postTeardown"]
 - ["6Scenes18IdentifiableObjectC", "preSetup"]
 - !private ["6Scenes18IdentifiableObjectC", "print"]
+- ["6Scenes18IdentifiableObjectC", "scoreboard"]
+- !private ["6Scenes18IdentifiableObjectC", "targetXVelocity"]
+- !private ["6Scenes18IdentifiableObjectC", "targetYVelocity"]
 - !private ["6Scenes18IdentifiableObjectC", "velocity"]
 - ["6Simple16InteractionLayerC", "Ball"]
 - ["6Simple16InteractionLayerC", "Bool"]
@@ -206,6 +269,7 @@ depends-member:
 - ["6Simple16InteractionLayerC", "FillStyle"]
 - ["6Simple16InteractionLayerC", "Player"]
 - !private ["6Simple16InteractionLayerC", "Point"]
+- ["6Simple16InteractionLayerC", "Scoreboard"]
 - !private ["6Simple16InteractionLayerC", "Self"]
 - ["6Simple16InteractionLayerC", "Size"]
 - ["6Simple16InteractionLayerC", "String"]
@@ -216,34 +280,43 @@ depends-member:
 - ["6Simple16InteractionLayerC", "field"]
 - ["6Simple16InteractionLayerC", "init"]
 - !private ["6Simple16InteractionLayerC", "insert"]
+- ["6Simple16InteractionLayerC", "kickType"]
 - ["6Simple16InteractionLayerC", "name"]
 - ["6Simple16InteractionLayerC", "onKeyDown"]
 - ["6Simple16InteractionLayerC", "player1"]
+- ["6Simple16InteractionLayerC", "player1KickDirection"]
 - ["6Simple16InteractionLayerC", "player2"]
+- ["6Simple16InteractionLayerC", "player2KickDirection"]
 - ["6Simple16InteractionLayerC", "postCalculate"]
 - ["6Simple16InteractionLayerC", "postTeardown"]
 - ["6Simple16InteractionLayerC", "preSetup"]
 - !private ["6Simple16InteractionLayerC", "print"]
+- ["6Simple16InteractionLayerC", "scoreboard"]
 - ["6Scenes14KeyDownHandlerP", "Ball"]
 - ["6Scenes14KeyDownHandlerP", "Color"]
 - ["6Scenes14KeyDownHandlerP", "Field"]
 - ["6Scenes14KeyDownHandlerP", "FillStyle"]
 - ["6Scenes14KeyDownHandlerP", "Player"]
 - !private ["6Scenes14KeyDownHandlerP", "Point"]
+- ["6Scenes14KeyDownHandlerP", "Scoreboard"]
 - !private ["6Scenes14KeyDownHandlerP", "Self"]
 - ["6Scenes14KeyDownHandlerP", ""]
 - !private ["6Scenes14KeyDownHandlerP", "ball"]
 - !private ["6Scenes14KeyDownHandlerP", "dispatcher"]
 - !private ["6Scenes14KeyDownHandlerP", "field"]
 - !private ["6Scenes14KeyDownHandlerP", "insert"]
+- ["6Scenes14KeyDownHandlerP", "kickType"]
 - ["6Scenes14KeyDownHandlerP", "name"]
 - ["6Scenes14KeyDownHandlerP", "onKeyDown"]
 - !private ["6Scenes14KeyDownHandlerP", "player1"]
+- !private ["6Scenes14KeyDownHandlerP", "player1KickDirection"]
 - !private ["6Scenes14KeyDownHandlerP", "player2"]
+- !private ["6Scenes14KeyDownHandlerP", "player2KickDirection"]
 - !private ["6Scenes14KeyDownHandlerP", "postCalculate"]
 - !private ["6Scenes14KeyDownHandlerP", "postTeardown"]
 - !private ["6Scenes14KeyDownHandlerP", "preSetup"]
 - !private ["6Scenes14KeyDownHandlerP", "print"]
+- !private ["6Scenes14KeyDownHandlerP", "scoreboard"]
 - ["6Scenes5LayerC", "Ball"]
 - ["6Scenes5LayerC", "Bool"]
 - ["6Scenes5LayerC", "Canvas"]
@@ -252,6 +325,7 @@ depends-member:
 - ["6Scenes5LayerC", "FillStyle"]
 - ["6Scenes5LayerC", "Player"]
 - !private ["6Scenes5LayerC", "Point"]
+- ["6Scenes5LayerC", "Scoreboard"]
 - !private ["6Scenes5LayerC", "Self"]
 - ["6Scenes5LayerC", "Size"]
 - ["6Scenes5LayerC", "String"]
@@ -261,16 +335,21 @@ depends-member:
 - ["6Scenes5LayerC", "field"]
 - ["6Scenes5LayerC", "init"]
 - !private ["6Scenes5LayerC", "insert"]
+- ["6Scenes5LayerC", "kickType"]
 - ["6Scenes5LayerC", "name"]
 - ["6Scenes5LayerC", "onKeyDown"]
 - ["6Scenes5LayerC", "player1"]
+- ["6Scenes5LayerC", "player1KickDirection"]
 - ["6Scenes5LayerC", "player2"]
+- ["6Scenes5LayerC", "player2KickDirection"]
 - ["6Scenes5LayerC", "postCalculate"]
 - ["6Scenes5LayerC", "postTeardown"]
 - ["6Scenes5LayerC", "preSetup"]
 - !private ["6Scenes5LayerC", "print"]
+- ["6Scenes5LayerC", "scoreboard"]
 - ["4Igis5ColorC4NameO", "blue"]
 - ["4Igis5ColorC4NameO", "red"]
+- !private ["Sj", ""]
 - !private ["6Simple6PlayerC", "boundingRect"]
 - !private ["6Simple6PlayerC", "changeVelocity"]
 - !private ["6Simple6PlayerC", "head"]
@@ -295,17 +374,27 @@ depends-member:
 - !private ["6Scenes16RenderableEntityC", "changeVelocity"]
 - !private ["6Scenes16RenderableEntityC", "ellipse"]
 - !private ["6Scenes16RenderableEntityC", "field"]
+- !private ["6Scenes16RenderableEntityC", "fieldCircle"]
+- !private ["6Scenes16RenderableEntityC", "goal1"]
+- !private ["6Scenes16RenderableEntityC", "goal2"]
 - !private ["6Scenes16RenderableEntityC", "goalBox1"]
 - !private ["6Scenes16RenderableEntityC", "goalBox2"]
 - !private ["6Scenes16RenderableEntityC", "goalBoxBoundingRect"]
 - !private ["6Scenes16RenderableEntityC", "head"]
+- !private ["6Scenes16RenderableEntityC", "increasePlayer1Score"]
+- !private ["6Scenes16RenderableEntityC", "increasePlayer2Score"]
 - !private ["6Scenes16RenderableEntityC", "jersey"]
 - !private ["6Scenes16RenderableEntityC", "move"]
 - !private ["6Scenes16RenderableEntityC", "moveDown"]
 - !private ["6Scenes16RenderableEntityC", "moveLeft"]
 - !private ["6Scenes16RenderableEntityC", "moveRight"]
 - !private ["6Scenes16RenderableEntityC", "moveUp"]
+- !private ["6Scenes16RenderableEntityC", "targetXVelocity"]
+- !private ["6Scenes16RenderableEntityC", "targetYVelocity"]
 - !private ["6Scenes16RenderableEntityC", "velocity"]
+- !private ["6Simple10ScoreboardC", "increasePlayer1Score"]
+- !private ["6Simple10ScoreboardC", "increasePlayer2Score"]
+- ["6Simple10ScoreboardC", "init"]
 - !private ["ST", ""]
 - !private ["ST", "contains"]
 - !private ["Sh", "contains"]
@@ -313,6 +402,7 @@ depends-member:
 - !private ["4Igis4SizeV", "center"]
 - !private ["4Igis4SizeV", "height"]
 - !private ["4Igis4SizeV", "width"]
+- !private ["Sx", ""]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["s27StringInterpolationProtocolP", "init"]
@@ -325,12 +415,23 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
 - !private ["10Foundation13_NSBridgeableP", "contains"]
 - !private ["s21_ObjectiveCBridgeableP", "contains"]
+- ["6Simple16InteractionLayerC8kickTypeO", "=="]
+- ["6Simple16InteractionLayerC8kickTypeO", ""]
+- ["6Simple16InteractionLayerC8kickTypeO", "__derived_enum_equals"]
+- ["6Simple16InteractionLayerC8kickTypeO", "_rawHashValue"]
+- ["6Simple16InteractionLayerC8kickTypeO", "down"]
+- ["6Simple16InteractionLayerC8kickTypeO", "hash"]
+- ["6Simple16InteractionLayerC8kickTypeO", "hashValue"]
+- ["6Simple16InteractionLayerC8kickTypeO", "straight"]
+- ["6Simple16InteractionLayerC8kickTypeO", "up"]
 depends-nominal:
+- !private "s18AdditiveArithmeticP"
 - "6Simple4BallC"
 - "4Igis12CanvasObjectC"
 - "s12CaseIterableP"
 - !private "Sl"
 - "4Igis5ColorC"
+- !private "SL"
 - !private "4Igis11ContainmentO"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
@@ -343,25 +444,30 @@ depends-nominal:
 - "SQ"
 - "6Scenes12EventHandlerP"
 - !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s32ExpressibleByStringInterpolationP"
 - "6Simple5FieldC"
 - "4Igis9FillStyleC"
 - "SH"
+- !private "s6HasherV"
 - "6Scenes18IdentifiableObjectC"
 - "6Simple16InteractionLayerC"
 - "6Scenes14KeyDownHandlerP"
 - "6Scenes5LayerC"
 - "4Igis5ColorC4NameO"
+- !private "Sj"
 - "6Simple6PlayerC"
 - !private "4Igis5PointV"
 - "SY"
 - !private "4Igis4RectV"
 - !private "4Igis9RectangleC"
 - "6Scenes16RenderableEntityC"
+- "6Simple10ScoreboardC"
 - !private "ST"
 - !private "Sh"
 - !private "s10SetAlgebraP"
 - !private "4Igis4SizeV"
+- !private "Sx"
 - !private "s27StringInterpolationProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "6Scenes6ZOrderO"
@@ -371,6 +477,7 @@ depends-nominal:
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation13_NSBridgeableP"
 - !private "s21_ObjectiveCBridgeableP"
+- "6Simple16InteractionLayerC8kickTypeO"
 depends-dynamic-lookup:
 depends-external:
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/NIOHTTP1.swiftmodule"
@@ -395,4 +502,4 @@ depends-external:
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOHTTPParser.build/module.modulemap"
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOAtomics.build/module.modulemap"
 - "/usr/local/lib/merlin/Igis-1.3.7/Igis/.build/debug/CNIOLinux.build/module.modulemap"
-interface-hash: "782433de1c9ebc18712b41c8fd4afbc5"
+interface-hash: "76e279ca11d29e4fa4ccd08bc1a09fa4"
